@@ -1,5 +1,6 @@
 .container-main {
     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
 }
 
 .main-home {
@@ -33,13 +34,14 @@
         position: absolute;
         bottom: 30px;
         left: 50%;
-        stroke:white;
+        stroke: white;
         transform: translateX(-50%);
 
         &:hover {
             stroke: $accent-color;
         }
     }
+
     &__item {
         height: 42px;
         width: 42px;
@@ -110,7 +112,108 @@
 
 }
 
-
 .advantages__wrap-content_hide {
     display: none;
+}
+
+.services {
+    width: 315px;
+    padding-bottom: 60px;
+
+    &__heading {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $active-color;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__question {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        margin-bottom: 30px;
+    }
+
+    &__wrap-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        // grid-template-rows: repeat(6, 1fr);
+        // grid-template-columns: 1fr;
+        // grid-gap: 30px;
+    }
+
+}
+
+.card-service {
+    // min-height: 294px;
+
+    &__wrap-icon {
+        width: 92px;
+        height: 92px;
+        background-color: $text-light;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $active-color;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
+        color: $text-light;
+    }
+}
+
+.about-team {
+    position: relative;
+    height: 500px;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 335px;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 295px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
