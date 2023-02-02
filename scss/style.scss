@@ -1,0 +1,537 @@
+@import "reset";
+@import "normalize";
+@import "vars";
+@import "header";
+@import "home";
+@import "main";
+@import "mixins";
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  padding: 0;
+}
+
+
+@include tabletSD {
+
+  // min-width: 768px
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+
+    &__info-block {
+      background-color: transparent;
+      min-height: auto;
+    }
+
+    &__inner-container {
+      width: 648px;
+      justify-content: flex-start;
+      gap: 6px;
+    }
+
+    &__title-block {
+      min-height: auto;
+    }
+
+    &__wrap-logo img {
+      width: 130px;
+      height: 60px;
+    }
+
+    &__slash {
+      width: 21px;
+      height: 47px;
+    }
+
+    &__item {
+      font-size: 36px;
+      line-height: 44px;
+      color: $dark-regular;
+    }
+
+  }
+
+  .logo__svg {
+    width: 130px;
+    height: 60px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .address {
+    display: inline-block;
+    position: relative;
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $text-color;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-flex;
+      position: absolute;
+      top: 50%;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $bg-separator-color;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0px;
+    }
+  }
+
+  .phone {
+    position: relative;
+    padding-right: 12px;
+
+    &::after {
+      content: "";
+      display: inline-flex;
+      position: absolute;
+      top: 50%;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $bg-separator-color;
+      transform: translateY(-50%);
+      right: 0px;
+    }
+  }
+
+  .facebook {
+    display: inline-flex;
+
+    &__item {
+      width: 25px;
+      height: 25px;
+      fill: $text-color;
+
+      &:hover {
+        fill: $accent-color;
+      }
+    }
+  }
+
+  // navigation
+  .nav {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+      width: 648px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25px;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        border-bottom: 2px solid $text-light;
+      }
+
+
+      &_red {
+        border-bottom: 2px solid $accent-color;
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+      color: $text-light;
+
+      &_light-theme {
+        color: $active-color;
+      }
+
+      &_red {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .nav__item_light-theme {
+
+    &:hover {
+      border-bottom: 2px solid $active-color;
+    }
+  }
+
+  .nav__item_red:hover {
+    border-bottom: 2px solid $accent-color;
+  }
+
+
+
+  // main
+
+  .about-section {
+    padding-top: 60px;
+  }
+
+  .about {
+    width: 648px;
+
+    &__heading {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+
+  .team {
+    height: 234px;
+    margin: 60px 0;
+
+    &__heading {
+      font-size: 46px;
+      line-height: 56px;
+      letter-spacing: 63px;
+    }
+  }
+
+  // carousel
+
+  .achieve-section__wrap-slider {
+    width: 688px;
+    height: 90px;
+  }
+
+  .slick-initialized .slick-slide {
+    margin: 0 20px;
+  }
+
+  .slick-dots li:nth-child(n+4) {
+    display: none;
+  }
+
+  // Homepage Main
+  .container-main {
+    background: url(../img/Symbol.svg) no-repeat top center / auto 1024px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  }
+
+  .slogan {
+    min-height: 804px;
+    padding-top: 269px;
+    margin-bottom: 60px;
+
+    &__heading {
+      width: 648px;
+    }
+  }
+
+  .advantages {
+    &__titles {
+      min-height: 106px;
+      padding-left: 60px;
+    }
+
+    &__button {
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    &__wrap-content {
+      width: 648px;
+      min-height: 187px;
+      padding-top: 60px;
+    }
+
+    &__content {
+      justify-content: flex-start;
+      width: auto;
+    }
+
+    &__heading {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__text {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+
+
+
+
+@include tabletHD {
+
+  // min-width: 1024px
+  // header
+  .header {
+    width: 904px;
+    position: relative;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+
+    &__info-block {
+      position: absolute;
+      right: 0;
+    }
+
+    &__inner-container {
+      width: auto;
+
+    }
+  }
+
+  .nav {
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    &__list {
+      width: auto;
+    }
+
+    &__link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  // main
+  .about {
+    width: 904px;
+    display: flex;
+    justify-content: space-between;
+
+    &__wrap {
+      width: 486px;
+    }
+
+    &__text-wrapper {
+      margin-bottom: 0;
+      width: 486px;
+    }
+
+    &__heading {
+      &_quality {
+        width: 362px;
+
+      }
+    }
+  }
+
+  .experience {
+    width: 388px;
+  }
+
+  .team {
+    height: 312px;
+
+    &__heading {
+      font-size: 86px;
+      line-height: 105px;
+      letter-spacing: 63px;
+    }
+  }
+
+  // slider
+  .achieve-section {
+    min-height: 263px;
+
+    &__wrap-slider {
+      width: 944px;
+      height: 110px;
+    }
+  }
+
+  .slider__wrap-img img {
+    height: 60px;
+  }
+
+  // homepage main
+
+  .container-main {
+    background: url(../img/Symbol.svg) no-repeat top center / auto 768px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  }
+
+  .slogan {
+    min-height: 652px;
+    padding-top: 245px;
+  }
+
+  .advantages {
+    flex-direction: row;
+    width: 904px;
+
+    &__titles {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      border-right: 4px solid $text-color;
+      padding-right: 60px;
+      width: 452px;
+      padding: 15px 60px 15px 0;
+      justify-items: end;
+    }
+
+    &__wrap-content {
+      min-height: auto;
+      min-width: 405px;
+      border-top: none;
+      padding-top: 0;
+    }
+
+    &__content {
+      padding: 10px 0 0 60px;
+      width: 452px;
+    }
+
+    &__heading {
+      margin-bottom: 30px;
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__text {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+
+
+@include desktopHD {
+
+  // min-width: 1920px
+  .header {
+    width: 1600px;
+  }
+
+  .about {
+    width: 1360px;
+
+    &__wrap {
+      width: 942px;
+    }
+
+    &__text-wrapper {
+      width: 942px;
+    }
+  }
+
+  .team {
+    height: 584px;
+  }
+
+  .achieve-section__wrap-slider {
+    width: 1600px;
+  }
+
+  // homepage main 
+  .container-main {
+    background: url(../img/Symbol.svg) no-repeat top center / auto 1000px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  }
+
+  .slogan {
+    min-height: 884px;
+    padding-top: 361px;
+  }
+
+  .advantages {
+    width: 1360px;
+
+    &__content {
+      padding: 73px 0 73px 60px;
+    }
+
+    &__wrap-content {
+      min-width: 861px;
+    }
+  }
+}
+
+@include desktopSD {
+
+  // min-width: 1440px
+  .header {
+    width: 1320px;
+  }
+
+  .about {
+    width: 1080px;
+
+    &__wrap {
+      width: 662px;
+    }
+
+    &__text-wrapper {
+      width: 662px;
+    }
+  }
+
+  .team {
+    height: 438px;
+  }
+
+  .achieve-section__wrap-slider {
+    width: 1320px;
+  }
+
+  // homepage main
+  .container-main {
+    background: url(../img/Symbol.svg) no-repeat top center / auto 799px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  }
+
+  .slogan {
+    min-height: 684px;
+    padding-top: 261px;
+  }
+
+  .advantages {
+    width: 1080px;
+
+    &__content {
+      padding: 73px 0 73px 60px;
+    }
+    
+    &__wrap-content {
+      min-width: 581px;
+    }
+  }
+
+
+}
