@@ -1,6 +1,7 @@
 .container-main {
     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
+    width: 100%;
 }
 
 .main-home {
@@ -58,16 +59,21 @@
     &__titles {
         min-height: 60px;
         display: grid;
+        // display: flex;
         overflow-x: auto;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 30px;
         padding-left: 30px;
 
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+
         &::-webkit-scrollbar {
-            display: NONE;
+            display: none;
         }
     }
+
 
     &__button {
         font-weight: 700;
@@ -110,6 +116,12 @@
         color: #FFFFFF;
     }
 
+}
+
+.advantages__button_active {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .advantages__wrap-content_hide {

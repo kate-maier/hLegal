@@ -38,10 +38,13 @@ $("button.language__button").click(function(){
 
 // buttons change color advantages
 
-$("button.advantages__button").click(function(){
-    $("button.advantages__button").css("color", "#B3B3BA");
-  $(this).css("color", "#F0145A");
-});
+$(document).ready(function(){
+    $('.advantages__titles li button').click(function(){
+      $('.advantages__titles li button').removeClass("advantages__button_active");
+      $(this).addClass("advantages__button_active");
+  });
+  });
+
 
 
 // appearance text
