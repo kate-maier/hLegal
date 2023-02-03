@@ -276,7 +276,6 @@ button {
     }
 
     &__content {
-      justify-content: flex-start;
       width: auto;
     }
 
@@ -453,31 +452,33 @@ button {
   .advantages {
     flex-direction: row;
     width: 904px;
+    height: 303px;
 
     &__titles {
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      height: auto;
       border-right: 4px solid $text-color;
       padding-right: 60px;
-      width: 452px;
+      width: 439px;
       padding: 15px 60px 15px 0;
-      justify-items: end;
+      gap: 30px;
+      align-items: end;
+    }
+
+    &__content {
+      padding-left: 60px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
     }
 
     &__wrap-content {
-      min-height: auto;
-      min-width: 405px;
+      width: 405px;
       border-top: none;
       padding-top: 0;
     }
 
-    &__content {
-      padding: 10px 0 0 60px;
-      width: 452px;
-    }
-
     &__heading {
-      margin-bottom: 30px;
       font-size: 30px;
       line-height: 37px;
     }
@@ -499,11 +500,6 @@ button {
     }
   }
 
-  // team homepage
-  // .slick-initialized .slick-slide {
-  // margin: 0;
-  // }
-
   .about-team {
 
     &::before {
@@ -516,14 +512,8 @@ button {
 
     // team slider
 
-    // &__slider-content{
-    // display: flex;
-    // flex-direction: row;
-    // }
-
     &__slider {
       width: 903px;
-      // height: 528px;
     }
 
     &__wrap-img {
@@ -596,12 +586,8 @@ button {
   .advantages {
     width: 1360px;
 
-    &__content {
-      padding: 73px 0 73px 60px;
-    }
-
     &__wrap-content {
-      min-width: 861px;
+      width: 861px;
     }
   }
 
@@ -620,7 +606,7 @@ button {
       width: 1840px;
     }
 
-    // slider
+    // team slider
     &__slider {
       width: 1600px;
       // height: 298px;
@@ -689,12 +675,8 @@ button {
   .advantages {
     width: 1080px;
 
-    &__content {
-      padding: 73px 0 73px 60px;
-    }
-
     &__wrap-content {
-      min-width: 581px;
+      width: 581px;
     }
   }
 
@@ -714,27 +696,31 @@ button {
     }
 
     // slider
+
     &__slider {
       width: 1320px;
-      // height: 298px;
+      height: 344px;
     }
 
     &__wrap-img {
       height: 344px;
+      width: 400px;
 
-      // img {
-      //   width: 100%;
-      //   height: auto;
-      // }
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     &__wrap-quote {
       width: 920px;
-      height: 344px;
+      min-height: 344px;
     }
 
     &__text {
       width: 860px;
+      // height: 581px;
+
     }
   }
 
