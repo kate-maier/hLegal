@@ -15,12 +15,12 @@ $("button.language__button").click(function(){
 
 // buttons change color advantages
 
-// $(document).ready(function(){
-//     $('.advantages__titles li button').click(function(){
-//       $('.advantages__titles li button').removeClass("advantages__button_active");
-//       $(this).addClass("advantages__button_active");
-//   });
-//   });
+$(document).ready(function(){
+    $('.advantages__titles li button').click(function(){
+      $('.advantages__titles li button').removeClass("advantages__button_active");
+      $(this).addClass("advantages__button_active");
+  });
+  });
 
 // appearance text
 $(document).on('click', '.advantages__button', function() {

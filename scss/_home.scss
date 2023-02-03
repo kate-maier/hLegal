@@ -129,12 +129,6 @@
 }
 
 
-// .advantages__button_active {
-//     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-// }
-
 .advantages__wrap-content_hide {
     display: none;
 }
@@ -226,14 +220,14 @@
         transform: translateX(-50%);
     }
 
-    &__slider{
+    &__slider {
         width: 315px;
         // height: 1087px;
     }
 
 
     // &__slider-content {
-        // width: 315px;
+    // width: 315px;
     // }
 
     &__wrap-img {
@@ -290,4 +284,23 @@
 
 .about-team__slider .slick-dots {
     bottom: -45px;
+}
+
+// trust-company section
+
+.partner-company {
+    &__heading {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: grid;
+        width: 100%;
+    }
 }
