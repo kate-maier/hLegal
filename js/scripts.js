@@ -8,10 +8,17 @@ burger.onclick = function () {
 
 // buttons change color language
 
-$("button.language__button").click(function(){
-    $("button.language__button").css("background-color", "transparent");
-  $(this).css("background-color", "#F0145A");
-});
+// $("button.language__button").click(function(){
+//     $("button.language__button").css("background-color", "transparent");
+//   $(this).css("background-color", "#F0145A");
+// });
+
+$(document).ready(function(){
+    $('.language li button').click(function(){
+      $('.language li button').removeClass("language__button_active");
+      $(this).addClass("language__button_active");
+  });
+  });
 
 // buttons change color advantages
 

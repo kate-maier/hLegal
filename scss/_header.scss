@@ -95,15 +95,28 @@
         text-transform: uppercase;
         cursor: pointer;
 
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &_active {
+            background-color: $accent-color;
+        }
+
         &_light-theme {
             color: $text-color;
-
         }
+
     }
 }
 
-.language__button_grey:hover {
+.language__button_light-theme:hover {
     background-color: $bg-color;
+}
+
+.language__button_active:hover {
+    opacity: 1;
+    cursor: auto
 }
 
 
@@ -118,6 +131,10 @@
     text-align: right;
     color: $text-light;
     text-decoration: none;
+
+    &:hover {
+        color: $accent-color;
+    }
 
     &_light-theme {
         color: #B3B3BA;

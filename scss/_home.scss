@@ -127,6 +127,9 @@
 
 }
 
+.advantages__button_active{
+    color: $accent-color;
+}
 
 .advantages__wrap-content_hide {
     display: none;
@@ -151,15 +154,11 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        // grid-template-rows: repeat(6, 1fr);
-        // grid-template-columns: 1fr;
-        // grid-gap: 30px;
     }
 
 }
 
 .card-service {
-    // min-height: 294px;
 
     &__wrap-icon {
         width: 92px;
@@ -179,6 +178,10 @@
         color: $active-color;
         margin-bottom: 15px;
         display: block;
+
+        &:hover{
+            color: $accent-color;
+        }
     }
 
     &__description {
