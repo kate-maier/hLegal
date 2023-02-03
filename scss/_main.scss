@@ -129,7 +129,7 @@ main {
     }
 }
 
-.slick-initialized .slick-slide {
+.achieve-section__wrap-slider .slick-initialized .slick-slide {
     background-color: #fff;
     height: 90px;
     display: flex;
@@ -141,8 +141,12 @@ main {
     margin-bottom: 0;
 }
 
-.slick-dots {
+
+.achieve-section__wrap-slider .slick-dots {
     bottom: -50px;
+}
+
+.slick-dots {
 
     li button {
         background-color: $regular-color;
