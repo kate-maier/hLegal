@@ -74,17 +74,10 @@
 
     &__titles {
         height: 60px;
-        // display: grid;
         display: flex;
         overflow-x: auto;
-        // grid-template-rows: 1fr;
-        // grid-template-columns: 1fr 1fr 1fr 1fr;
-        // grid-gap: 30px;
         gap: 30px;
         padding-left: 30px;
-
-        // width: 100%;
-        // -webkit-overflow-scrolling: touch;
 
         &::-webkit-scrollbar {
             display: none;
@@ -135,10 +128,12 @@
 
 }
 
+
 .advantages__button_active {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: $accent-color;
 }
 
 .advantages__wrap-content_hide {
