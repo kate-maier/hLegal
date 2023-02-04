@@ -1,0 +1,75 @@
+.footer {
+    width: 100%;
+    height: 274px;
+    background-color: #F5F5FA;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 315px;
+        border-top: 2px solid #E6E6F0;
+        padding: 30px 0;
+
+    }
+
+    &__address-wrap {
+        margin-bottom: 21px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__address {
+        // margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+    }
+
+    &__on-map {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+    }
+
+    &__connect {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__facebook-item {
+        fill: #24A3FF;
+        width: 38px;
+        height: 38px;
+    }
+
+    &__phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #46466E;
+    }
+
+    &__email {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #24A3FF;
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #B3B3BA;
+    }
+
+}
