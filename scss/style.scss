@@ -140,6 +140,7 @@ button {
       width: 25px;
       height: 25px;
       fill: $text-color;
+      transition: fill 0.3s;
 
       &:hover {
         fill: $accent-color;
