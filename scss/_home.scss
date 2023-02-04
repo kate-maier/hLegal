@@ -151,19 +151,10 @@
 
 }
 
-.advantages__button_active {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-.advantages__button_active:hover {
-    cursor: auto
+.advantages__button_active{
+    color: $accent-color;
 }
-
-// .advantages__button_active{
-//     color: $accent-color;
-// }
 
 .advantages__wrap-content_hide {
     display: none;
@@ -435,11 +426,12 @@
 .card-public {
     background-color: $text-light;
     min-height: 432px;
+    border-radius: 8px 8px 0px 0px;
 
     &__wrap-img {
         height: 200px;
-        border-radius: 8px 8px 0px 0px;
         overflow: hidden;
+
 
         img {
             width: 100%;
@@ -458,6 +450,7 @@
         font-size: 16px;
         line-height: 20px;
         color: $regular-color;
+
         &:hover {
             color: $accent-color;
         }

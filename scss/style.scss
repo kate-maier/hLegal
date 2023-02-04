@@ -292,6 +292,15 @@ button {
     }
   }
 
+  .advantages__button_active {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .advantages__button_active:hover {
+    cursor: auto
+  }
 
   // services homepage
 
@@ -742,11 +751,11 @@ button {
     }
   }
 
-  .card-public{
+  .card-public {
     min-height: 430px;
 
-    &__wrap-img{
-      img{
+    &__wrap-img {
+      img {
         width: 100%;
         height: auto;
       }
@@ -845,22 +854,22 @@ button {
     }
   }
 
-// publications section
+  // publications section
 
-.publications__wrapper {
-  width: 1320px;
-}
-
-.card-public{
-  min-height: 450px;
-
-  &__wrap-img {
-    img{
-      width:100%;
-      height: auto;
-    }
- 
+  .publications__wrapper {
+    width: 1320px;
   }
-}
+
+  .card-public {
+    min-height: 450px;
+
+    &__wrap-img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+  }
 
 }
