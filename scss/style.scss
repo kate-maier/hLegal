@@ -102,15 +102,12 @@ button {
       display: inline-flex;
       position: absolute;
       top: 50%;
+      left: 0;
       width: 6px;
       height: 6px;
       border-radius: 50%;
       background-color: $bg-separator-color;
       transform: translateY(-50%);
-    }
-
-    &::before {
-      left: 0;
     }
 
     &::after {
@@ -292,15 +289,6 @@ button {
     }
   }
 
-  .advantages__button_active {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .advantages__button_active:hover {
-    cursor: auto
-  }
 
   // services homepage
 
@@ -384,17 +372,94 @@ button {
       grid-template-rows: 514px 388px;
     }
   }
-}
 
-.card-public {
-  &:last-child {
-    grid-column-end: span 2;
+  .card-public {
+    min-height: auto;
+
+    &__wrap-img {
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &:last-child {
+      grid-column-end: span 2;
+    }
   }
 
-  &__wrap-img {
-    display: flex;
-    align-items: center;
+  .footer {
+    height: 143px;
+
+    &__container {
+      width: 648px;
+      align-items: flex-start;
+      position: absolute;
+    }
+
+    &__address-wrap {
+      flex-direction: row;
+      // margin-bottom: 0;
+    }
+
+    &__address {
+      display: inline-block;
+      position: relative;
+      padding: 0 16px 0 0;
+
+      &:after {
+        content: "";
+        display: inline-flex;
+        position: absolute;
+        top: 50%;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #B3B3BA;
+        transform: translateY(-50%);
+        right: 0;
+      }
+    }
+
+    &__connect {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    &__phone {
+      display: inline-block;
+      position: relative;
+      padding: 0 16px 0 16px;
+
+      &:after,
+      &::before {
+        content: "";
+        display: inline-flex;
+        position: absolute;
+        top: 50%;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #B3B3BA;
+        transform: translateY(-50%);
+        right: 0;
+      }
+
+      &::before {
+        left: 0;
+      }
+    }
+
+    &__copyright {
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
   }
+
+
+
 }
 
 
@@ -631,6 +696,16 @@ button {
     }
   }
 
+  // footer
+
+  .footer {
+
+    &__container {
+      width: 904px;
+    }
+  }
+
+
 }
 
 
@@ -762,6 +837,15 @@ button {
     }
   }
 
+    // footer
+
+    .footer {
+
+      &__container {
+        width: 1600px;
+      }
+    }
+
 
 }
 
@@ -871,5 +955,14 @@ button {
 
     }
   }
+
+    // footer
+
+    .footer {
+
+      &__container {
+        width: 1320px;
+      }
+    }
 
 }
