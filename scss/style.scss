@@ -77,7 +77,7 @@ button {
 
   }
 
-  .logo__svg {
+  .header__logo {
     width: 130px;
     height: 60px;
   }
@@ -164,6 +164,7 @@ button {
       justify-content: center;
       height: 25px;
       border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
 
       &:hover {
         border-bottom: 2px solid $text-light;
@@ -564,7 +565,8 @@ button {
     &__wrapper {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr);
-    }}
+    }
+  }
 
 }
 
@@ -611,6 +613,7 @@ button {
 
     &__button {
       cursor: pointer;
+
     }
 
     &__wrap-content {
@@ -622,6 +625,10 @@ button {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .advantages__button_active:hover {
+    cursor: auto
   }
 
   .services {

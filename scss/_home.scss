@@ -17,14 +17,37 @@
     letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
-    color: $active-color;
-    // display: block;
-    // height: 20px;
+    color: $regular-color;
+    position: relative;
+    display: block;
+    height: 17px;
+    padding-right: 14px;
+    width: fit-content;
+    transition: 0.3s;
+
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 12px;
+        height: 12px;
+        transform: translateY(-50%);
+        right: 2px;
+        stroke: #24A3FF;
+        transition: 0.3s;
+    }
 
     &:hover {
         color: $accent-color;
     }
 }
+
+.pages-link:hover .pages-link__arrow{
+    stroke: $accent-color;
+}
+
+
 
 .slogan {
     width: 100%;
@@ -52,6 +75,7 @@
         left: 50%;
         stroke: white;
         transform: translateX(-50%);
+        transition: stroke 0.2s;
 
         &:hover {
             stroke: $accent-color;
@@ -127,9 +151,9 @@
 
 }
 
-.advantages__button_active{
-    color: $accent-color;
-}
+// .advantages__button_active{
+//     color: $accent-color;
+// }
 
 .advantages__wrap-content_hide {
     display: none;
@@ -175,11 +199,11 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 27px;
-        color: $active-color;
+        color: $regular-color;
         margin-bottom: 15px;
         display: block;
 
-        &:hover{
+        &:hover {
             color: $accent-color;
         }
     }
@@ -365,10 +389,9 @@
             background-color: #000000;
         }
 
-        &:nth-child(n+7){
+        &:nth-child(n+7) {
             display: none;
         }
     }
 
 }
-

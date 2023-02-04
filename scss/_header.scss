@@ -220,20 +220,15 @@
     }
 }
 
-
-.logo__first-letter {
-    fill: #F0145A;
-}
-
-.logo__letters {
-    fill: $text-light;
-}
-
-.logo__svg {
+.header__logo {
     width: 70px;
     height: 32px;
+    transition: 0.5s;
 }
 
+.header__logo:hover{
+    opacity: 0.8;
+}
 
 .header {
     min-height: 102px;

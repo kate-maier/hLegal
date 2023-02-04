@@ -20,6 +20,20 @@ $(document).ready(function(){
   });
   });
 
+
+  //Плавная прокрутка. Якоря
+  //вместо a[href^="#"] можно добавлять класс cсылки или индификатор
+  $(document).ready(function(){
+    $('a[href^="#services"]').bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 2
+        }, 800);
+        e.preventDefault();
+    });
+    return false;
+});
+
 // buttons change color advantages
 
 $(document).ready(function(){
