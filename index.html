@@ -13,24 +13,23 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
-
 <body>
-    <div id="container">
-        <div class="container-main">
+    <div id="container" class="container">
+        <div class="container_dark">
             <header id="header" class="header">
                 <!-- first line -->
                 <div class="header__info-block">
                     <div class="header__inner-container">
-                        <ul class="header__language language">
-                            <li><button class="language__button">ук</button></li>
-                            <li><button class="language__button">ру</button></li>
-                            <li><button class="language__button language__button_active">en</button></li>
+                        <ul class="header__lang">
+                            <li><button class="header__lang-button">ук</button></li>
+                            <li><button class="header__lang-button">ру</button></li>
+                            <li><button class="header__lang-button header__lang-button_active">en</button></li>
                         </ul>
-                        <p class="address">Kyiv, Mechnikova str., 14/1</p>
-                        <a class="phone" href="tel:0800211972">0800 211 927</a>
-                        <a class="facebook" href="#">
-                            <svg class="facebook__item">
-                                <use class="" href="../sprite.svg#facebook"></use>
+                        <p class="header__address">Kyiv, Mechnikova str., 14/1</p>
+                        <a class="header__phone" href="tel:0800211972">0800 211 927</a>
+                        <a class="header__facebook" href="#">
+                            <svg class="header__facebook-item">
+                                <use href="../sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </div>
@@ -39,14 +38,14 @@
                 <div class="header__title-block">
                     <div class="header__inner-container">
                         <div class="header__title-info">
-                            <a href="#" class="header__wrap-logo">
+                            <div class="header__wrap-logo">
                                 <img class="header__logo" src="img/Logo_dark_theme.svg" alt="Company logo">
-                            </a>
+                            </div>
                         </div>
                         <button id="burger-icon" class="burger-menu">
-                            <span class="burger-menu__line burger-menu__line_first"></span>
-                            <span class="burger-menu__line burger-menu__line_second"></span>
-                            <span class="burger-menu__line burger-menu__line_disappears"></span>
+                            <span class="burger-menu__line burger-menu__line_top"></span>
+                            <span class="burger-menu__line burger-menu__line_middle"></span>
+                            <span class="burger-menu__line burger-menu__line_disappear"></span>
 
                         </button>
                     </div>
@@ -281,7 +280,7 @@
                         <div class="card-public__wrap-img"><img src="img/publications/Publication_one.png"
                                 alt="publication image"></div>
                         <div class="card-public__info">
-                            <a class="card-public__title" href="">Equity associate</a>
+                            <a class="card-public__title" href="#">Equity associate</a>
                             <span class="card-public__data">April 22</span>
                             <p class="card-public__text">I'm a jun on projects. I am a co-owner of a law firm. How it
                                 happened. Before entering my parents told me that if I…</p>
@@ -291,7 +290,7 @@
                         <div class="card-public__wrap-img"><img src="img/publications/Publication_two.png"
                                 alt="publication image"></div>
                         <div class="card-public__info">
-                            <a class="card-public__title" href="">Penalty for the Good Corporation: what will happen to
+                            <a class="card-public__title" href="#">Penalty for the Good Corporation: what will happen to
                                 Google and others for violating the GDPR</a>
                             <span class="card-public__data">September 29</span>
                             <p class="card-public__text">And why the recovery of 50 million euros could be a fateful
@@ -302,7 +301,7 @@
                         <div class="card-public__wrap-img"><img src="img/publications/Publication_three.png"
                                 alt="publication image"></div>
                         <div class="card-public__info">
-                            <a class="card-public__title" href="">Millennial Testament</a>
+                            <a class="card-public__title" href="#">Millennial Testament</a>
                             <span class="card-public__data">August 19</span>
                             <p class="card-public__text">What and how modern vloggers, opinion leaders and
                                 crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks
@@ -310,7 +309,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         </main>

@@ -14,20 +14,21 @@
 
 <body>
     <div id="container">
+        <div class="container_dark">
         <header id="header" class="header">
             <!-- first line -->
             <div class="header__info-block">
                 <div class="header__inner-container">
-                    <ul class="header__language language">
-                        <li id="uk_click" class="language__button">ук</li>
-                        <li id="ru_click" class="language__button">ру</li>
-                        <li id="en_click" class="language__button">en</li>
+                    <ul class="header__lang">
+                        <li><button class="header__lang-button">ук</button></li>
+                        <li><button class="header__lang-button">ру</button></li>
+                        <li><button class="header__lang-button header__lang-button_active">en</button></li>
                     </ul>
-                    <p class="address">Kyiv, Mechnikova str., 14/1</p>
-                    <a class="phone" href="tel:0800211972">0800 211 927</a>
-                    <a class="facebook" href="#">
-                        <svg class="facebook__item">
-                            <use class="" href="../sprite.svg#facebook"></use>
+                    <p class="header__address">Kyiv, Mechnikova str., 14/1</p>
+                    <a class="header__phone" href="tel:0800211972">0800 211 927</a>
+                    <a class="header__facebook" href="#">
+                        <svg class="header__facebook-item">
+                            <use href="../sprite.svg#facebook"></use>
                         </svg>
                     </a>
                 </div>
@@ -36,14 +37,18 @@
             <div class="header__title-block">
                 <div class="header__inner-container">
                     <div class="header__title-info">
-                        <a href="#" class="header__wrap-logo"><img src="../img/Logo.svg" alt="Company logo"> </a>
+                        <a href="../index.html" class="header__wrap-logo">
+                            <img class="header__logo" src="../img/Logo_dark_theme.svg" alt="Company logo">
+                        </a>
                         <svg class="header__slash">
                             <use href="../sprite.svg#slash"></use>
                         </svg>
                         <span class="header__item">services</span>
                     </div>
-                    <button id="burger-icon" class="header__burger-menu">
-                        <span class="header__burger-menu_line"></span>
+                    <button id="burger-icon" class="burger-menu">
+                        <span class="burger-menu__line burger-menu__line_top"></span>
+                        <span class="burger-menu__line burger-menu__line_middle"></span>
+                        <span class="burger-menu__line burger-menu__line_disappear"></span>
                     </button>
                 </div>
             </div>
@@ -53,8 +58,8 @@
                     <li class="nav__item">
                         <a class="nav__link" href="about.html">about us</a>
                     </li>
-                    <li class="nav__item nav__item_red">
-                        <a class="nav__link nav__link_red" href="#">services</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">services</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="team.html">team</a>
@@ -68,11 +73,30 @@
                 </ul>
             </nav>
         </header>
-        <!-- main content -->
+<main></main>
+
     </div>
-
-
-
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__inner">
+                    <div class="footer__address-wrap">
+                        <span class="footer__address">Kyiv, Mechnikova str., 14/1</span>
+                        <a class="footer__on-map" href="https://goo.gl/maps/gais6Ypfb8HCMStz5">on map</a>
+                    </div>
+                    <div class="footer__contact">
+                        <a class="footer__facebook" href="#">
+                            <svg class="footer__facebook-item">
+                                <use href="../sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <span class="footer__phone">0800 211 927</span>
+                        <a class="footer__email" href="#">contact@forstudy.space</a>
+                    </div>
+                    <span class="footer__copyright">&#169; 2021 HLEGAL Law company, LLC</span>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/scripts.js"></script>

@@ -8,15 +8,10 @@ burger.onclick = function () {
 
 // buttons change color language
 
-// $("button.language__button").click(function(){
-//     $("button.language__button").css("background-color", "transparent");
-//   $(this).css("background-color", "#F0145A");
-// });
-
 $(document).ready(function(){
-    $('.language li button').click(function(){
-      $('.language li button').removeClass("language__button_active");
-      $(this).addClass("language__button_active");
+    $('.header__lang li button').click(function(){
+      $('.header__lang li button').removeClass("header__lang-button_active");
+      $(this).addClass("header__lang-button_active");
   });
   });
 
@@ -66,7 +61,7 @@ $(document).ready(function () {
     $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: true,
         speed: 300,
         infinite: true,

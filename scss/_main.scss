@@ -125,7 +125,6 @@ main {
 
     &__wrap-slider {
         width: 255px;
-
     }
 }
 
@@ -144,31 +143,4 @@ main {
 
 .achieve-section__wrap-slider .slick-dots {
     bottom: -50px;
-}
-
-.slick-dots {
-
-    li button {
-        background-color: $regular-color;
-        opacity: 0.2;
-        border-radius: 50%;
-        height: 16px;
-        width: 16px;
-
-        &::before {
-            content: none;
-            opacity: 1;
-        }
-
-
-        &:hover {
-            background-color: $regular-color;
-            opacity: 0.4;
-        }
-    }
-
-    li.slick-active button {
-        color: $regular-color;
-        opacity: 1;
-    }
 }

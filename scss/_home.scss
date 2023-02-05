@@ -1,4 +1,4 @@
-.container-main {
+.container_dark {
     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
     width: 100%;
@@ -40,14 +40,12 @@
 
     &:hover {
         color: $accent-color;
+
+        .pages-link__arrow {
+            stroke: $accent-color;
+        }
     }
 }
-
-.pages-link:hover .pages-link__arrow {
-    stroke: $accent-color;
-}
-
-
 
 .slogan {
     width: 100%;
@@ -117,9 +115,14 @@
         background: none;
         border: none;
         white-space: nowrap;
+        cursor: pointer;
 
         &:hover {
             color: $accent-color;
+        }
+
+        &_active {
+            color: #F0145A;
         }
     }
 
@@ -133,6 +136,10 @@
         min-height: 318px;
         padding-top: 30px;
         border-top: 4px solid rgba(255, 255, 255, 0.3);
+
+        &_hide {
+            display: none;
+        }
     }
 
     &__heading {
@@ -150,24 +157,6 @@
         color: #FFFFFF;
     }
 
-}
-
-
-.advantages__button_active {
-    // background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    color: #F0145A;
-    // background-color: $accent-color;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-  }
-
-//   .advantages__button_active:hover {
-    // cursor: auto
-//   }
-
-.advantages__wrap-content_hide {
-    display: none;
 }
 
 .services {
@@ -213,10 +202,6 @@
         color: $regular-color;
         margin-bottom: 15px;
         display: block;
-
-        &:hover {
-            color: $accent-color;
-        }
     }
 
     &__description {
@@ -259,16 +244,9 @@
 
     &__slider {
         width: 315px;
-        // height: 1087px;
     }
 
-
-    // &__slider-content {
-    // width: 315px;
-    // }
-
     &__wrap-img {
-        // width: 315px;
         height: 500px;
         overflow: hidden;
         display: flex;
@@ -297,6 +275,10 @@
         margin-bottom: 30px;
     }
 
+    &__wrap-person {
+        margin-top: auto;
+    }
+
     &__name {
         font-weight: 700;
         font-size: 16px;
@@ -313,14 +295,11 @@
         line-height: 22px;
         color: #B3B3BA;
     }
-}
 
-.about-team__wrap-person {
-    margin-top: auto;
-}
+    &__slider .slick-dots {
+        bottom: -45px;
+    }
 
-.about-team__slider .slick-dots {
-    bottom: -45px;
 }
 
 // trust-company section
@@ -420,13 +399,11 @@
         gap: 30px;
         flex-direction: column;
     }
+
+    &__wrapper {
+        width: 315px;
+    }
 }
-
-.publications__wrapper {
-    width: 315px;
-}
-
-
 
 .card-public {
     background-color: $text-light;
@@ -459,10 +436,6 @@
         font-size: 16px;
         line-height: 20px;
         color: $regular-color;
-
-        &:hover {
-            color: $accent-color;
-        }
     }
 
     &__data {
@@ -481,7 +454,5 @@
         font-size: 14px;
         line-height: 22px;
     }
-
-
 
 }
