@@ -95,6 +95,7 @@
     flex-direction: column;
     margin-bottom: 30px;
 
+
     &__titles {
         height: 67px;
         display: flex;
@@ -153,17 +154,17 @@
 
 
 .advantages__button_active {
-    background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    color: $accent-color;
-    background-color: $accent-color;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    color: #F0145A;
+    // background-color: $accent-color;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
-  .advantages__button_active:hover {
-    cursor: auto
-  }
+//   .advantages__button_active:hover {
+    // cursor: auto
+//   }
 
 .advantages__wrap-content_hide {
     display: none;

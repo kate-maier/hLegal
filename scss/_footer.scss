@@ -9,10 +9,15 @@
     &__container {
         width: 315px;
         border-top: 2px solid #E6E6F0;
-        padding: 30px 0;
+        // padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__inner {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     &__address-wrap {
@@ -40,7 +45,7 @@
         color: #24A3FF;
     }
 
-    &__connect {
+    &__contact {
         margin-bottom: 30px;
         display: flex;
         flex-direction: column;
@@ -73,6 +78,7 @@
         font-size: 16px;
         line-height: 20px;
         color: #B3B3BA;
+        align-self: center;
     }
 
 }

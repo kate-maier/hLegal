@@ -390,18 +390,20 @@ button {
     }
   }
 
+  // footer
   .footer {
-    height: 143px;
+    height: 189px;
 
     &__container {
       width: 648px;
-      align-items: flex-start;
-      position: absolute;
+      // position: absolute;
     }
 
     &__address-wrap {
       flex-direction: row;
-      // margin-bottom: 0;
+
+      width: 398px;
+
     }
 
     &__address {
@@ -423,9 +425,9 @@ button {
       }
     }
 
-    &__connect {
+    &__contact {
       flex-direction: row;
-      margin-bottom: 0;
+      margin-bottom: 30;
     }
 
     &__phone {
@@ -451,13 +453,8 @@ button {
         left: 0;
       }
     }
-
-    &__copyright {
-      position: absolute;
-      right: 0;
-      top: 30px;
-    }
   }
+
 
 
 
@@ -605,6 +602,17 @@ button {
     }
   }
 
+  .advantages__button_active {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  // .advantages__button_active:hover {
+  //   cursor: auto
+  // }
+
   .services {
     width: 904px;
 
@@ -700,9 +708,25 @@ button {
   // footer
 
   .footer {
+    height: 139px;
 
     &__container {
+      width: auto;
+    }
+
+    &__inner{
+      position: relative;
       width: 904px;
+    }
+
+    &__contact{
+      margin-bottom: 0;
+    }
+
+    &__copyright {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 
@@ -759,16 +783,6 @@ button {
       width: 861px;
     }
   }
-
-  // .advantages__button_active {
-  //   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  //   background-clip: text;
-  //   -webkit-text-fill-color: transparent;
-  // }
-
-  // .advantages__button_active:hover {
-  //   cursor: auto
-  // }
 
   .services {
     width: 1600px;
@@ -838,14 +852,14 @@ button {
     }
   }
 
-    // footer
+  // footer
 
-    .footer {
+  .footer {
 
-      &__container {
-        width: 1600px;
-      }
+    &__inner {
+      width: 1600px;
     }
+  }
 
 
 }
@@ -957,13 +971,13 @@ button {
     }
   }
 
-    // footer
+  // footer
 
-    .footer {
+  .footer {
 
-      &__container {
-        width: 1320px;
-      }
+    &__inner {
+      width: 1320px;
     }
+  }
 
 }
