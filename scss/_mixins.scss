@@ -1,24 +1,30 @@
  @mixin tabletSD {
-    @media screen and (min-width: 768px) {
-      @content;
-    }
-  }
-  
-  @mixin tabletHD {
-    @media screen and (min-width: 1024px) {
-      @content;
-    }
-  }
+   @media screen and (min-width: 768px) {
+     @content;
+   }
+ }
 
-  @mixin desktopHD {
-    @media screen and (min-width: 1920px) {
-      @content;
-    }
-  }
+ @mixin tabletHD {
+   @media screen and (min-width: 1024px) {
+     @content;
+   }
+ }
 
-  @mixin desktopSD {
-    @media screen and (min-width: 1440px) {
-      @content;
-    }
-  }
-  
+ @mixin desktopHD {
+   @media screen and (min-width: 1920px) {
+     @content;
+   }
+ }
+
+ @mixin desktopSD {
+   @media screen and (min-width: 1440px) {
+     @content;
+   }
+ }
+
+ @mixin gradient-text {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }

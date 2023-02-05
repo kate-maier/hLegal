@@ -6,6 +6,10 @@ main {
     padding: 30px 0 60px;
 }
 
+// .header.menu_open .about{
+//     padding-top: 300px;
+// }
+
 .about {
     width: 315px;
     margin: 0 auto;
@@ -15,9 +19,9 @@ main {
         font-size: 30px;
         line-height: 37px;
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
         &_idea {
             margin-bottom: 28px;
         }
@@ -63,9 +67,9 @@ main {
         font-size: 36px;
         line-height: 44px;
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+        -webkit-text-fill-color: transparent;    }
 
     &__text {
         font-size: 16px;

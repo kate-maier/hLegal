@@ -523,10 +523,7 @@
   }
 
   .advantages__button_active {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-text;
   }
 
   .advantages__button_active:hover {

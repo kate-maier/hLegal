@@ -65,6 +65,7 @@
         text-align: center;
         color: $text-light;
         margin: 0;
+        animation: slogan 3s ease-in;
     }
 
     &__arrow {
@@ -85,6 +86,21 @@
         width: 42px;
     }
 
+}
+
+@keyframes slogan {
+    0% {
+        transform: scale(0.2);
+    }
+
+    50% {
+        transform: scale(1.5);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .advantages {
@@ -172,13 +188,13 @@
 
 
 .conversion {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
     margin: 10px 0 30px;
 }
 
@@ -267,6 +283,7 @@
 
     &__text {
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 700;
