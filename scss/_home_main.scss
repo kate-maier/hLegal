@@ -4,14 +4,28 @@
     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
     width: 100%;
-}
-
-.main-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+// .fff {
+//     width: 100%;
+//     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+// min-height: 3364px;
+// position: absolute;
+// top: 0;
+// left: 0;
+// z-index: -3;
+// }
+
+// .main-home {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 .pages-link {
     font-size: 14px;
@@ -22,10 +36,10 @@
     @include link-color;
     position: relative;
     display: block;
-    height: 17px;
     padding-right: 14px;
     width: fit-content;
     transition: 0.2s;
+    text-shadow: none;
 
 
     &__arrow {
@@ -42,6 +56,7 @@
 
     &:hover {
         color: $accent-color;
+        text-shadow: none;
 
         .pages-link__arrow {
             stroke: $accent-color;
@@ -166,6 +181,10 @@
     width: 315px;
     padding-bottom: 60px;
 
+    &__pages-link {
+        margin-bottom: 10px;
+    }
+
     &__wrap-cards {
         display: flex;
         flex-direction: column;
@@ -178,8 +197,10 @@
     @include gradient-text;
     font-weight: 700;
     font-size: 30px;
-    margin: 10px 0 30px;
+    margin-bottom: 30px;
+    // margin: 10px 0 30px;
 }
+
 
 .card-service {
 
@@ -206,6 +227,7 @@
     &__description {
         line-height: 1.6;
         color: $color-light;
+        
     }
 }
 
@@ -213,6 +235,10 @@
     position: relative;
     padding: 80px 0 40px;
     margin-bottom: 60px;
+
+    &__pages-link {
+        margin-bottom: 5px;
+    }
 
     &:before {
         content: "";
@@ -387,6 +413,10 @@
     display: flex;
     justify-content: center;
 
+    &__pages-link {
+        margin-bottom: 5px;
+    }
+
     &__wrapper-cards {
         display: flex;
         gap: 30px;
@@ -410,7 +440,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }   
+    }
 
     &__img {
         height: 100%;

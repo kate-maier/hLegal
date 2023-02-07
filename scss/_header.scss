@@ -3,7 +3,7 @@
 .header {
     margin: 0 auto;
     width: 100%;
-    min-height: 102px;
+    // min-height: 102px;
 
     &__info-block {
         background: rgba(245, 245, 250, 0.2);
@@ -110,12 +110,14 @@
         gap: 4px;
     }
 
-    &__logo {
-        width: 70px;
+    &__wrap-logo{
         height: 32px;
+    }
+
+    &__logo {
         transition: 0.2s;
 
-        &_link-active {
+        &_active {
             &:hover {
                 opacity: 0.8;
             }

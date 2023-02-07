@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 50px;
+    padding-top: 52px;
 
     &__info-block {
       background-color: transparent;
@@ -94,10 +94,10 @@
       min-height: auto;
     }
 
-    &__wrap-logo img {
-      width: 130px;
+    &__wrap-logo {
       height: 60px;
     }
+
 
     &__logo {
       width: 130px;
@@ -175,7 +175,7 @@
 
   // Homepage Main
   .container_dark {
-    background: url(../img/Symbol.svg) no-repeat top center / auto 1024px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: auto 1024px, auto;
   }
 
   .slogan {
@@ -305,7 +305,7 @@
 
   .card-public {
     min-height: auto;
-    
+
     &__img {
 
       &_combined {
@@ -470,7 +470,8 @@
   // homepage main
 
   .container_dark {
-    background: url(../img/Symbol.svg) no-repeat top center / auto 768px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: auto 768px, auto;
+
   }
 
   .slogan {
@@ -670,6 +671,7 @@
 
   .experience {
     width: 388px;
+    height: 322px;
   }
 
   .team {
@@ -692,6 +694,10 @@
     }
   }
 
+  .achieve-section__wrap-slider .slick-initialized .slick-slide {
+    height: 110px;
+  }
+
   .slider__wrap-img img {
     height: 60px;
   }
@@ -708,7 +714,7 @@
 
   // homepage main 
   .container_dark {
-    background: url(../img/Symbol.svg) no-repeat top center / auto 1000px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: auto 1000px, auto;
   }
 
   .slogan {
@@ -843,7 +849,7 @@
 
   // homepage main
   .container_dark {
-    background: url(../img/Symbol.svg) no-repeat top center / auto 799px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: auto 799px, auto;
   }
 
   .slogan {
