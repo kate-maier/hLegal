@@ -1,3 +1,5 @@
+@import "mixins";
+
 .container_dark {
     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
@@ -13,17 +15,17 @@
 
 .pages-link {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
-    color: $regular-color;
+    @include link-color;
     position: relative;
     display: block;
     height: 17px;
     padding-right: 14px;
     width: fit-content;
-    transition: 0.3s;
+    transition: 0.2s;
 
 
     &__arrow {
@@ -34,8 +36,8 @@
         height: 12px;
         transform: translateY(-50%);
         right: 2px;
-        stroke: #24A3FF;
-        transition: 0.3s;
+        stroke: $regular-color;
+        transition: 0.2s;
     }
 
     &:hover {
@@ -61,11 +63,11 @@
         height: 138px;
         font-weight: 700;
         font-size: 38px;
-        line-height: 46px;
+        line-height: 1.2;
         text-align: center;
-        color: $text-light;
+        color: $color-light;
         margin: 0;
-        animation: slogan 3s ease-in;
+        animation: slogan 2s ease-in;
     }
 
     &__arrow {
@@ -86,21 +88,6 @@
         width: 42px;
     }
 
-}
-
-@keyframes slogan {
-    0% {
-        transform: scale(0.2);
-    }
-
-    50% {
-        transform: scale(1.5);
-
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }
 
 .advantages {
@@ -126,19 +113,19 @@
     &__button {
         font-weight: 700;
         font-size: 30px;
-        line-height: 37px;
-        color: #B3B3BA;
+        color: $color-secondary;
         background: none;
         border: none;
         white-space: nowrap;
         cursor: pointer;
+        transition: color 0.2s;
 
         &:hover {
             color: $accent-color;
         }
 
         &_active {
-            color: #F0145A;
+            color: $accent-color;
         }
     }
 
@@ -149,7 +136,7 @@
 
     &__wrap-content {
         width: 315px;
-        min-height: 318px;
+        min-height: 348px;
         padding-top: 30px;
         border-top: 4px solid rgba(255, 255, 255, 0.3);
 
@@ -161,16 +148,16 @@
     &__heading {
         font-weight: 700;
         font-size: 20px;
-        line-height: 24px;
-        color: $text-light;
+        line-height: 1.2;
+        color: $color-light;
         margin-bottom: 30px;
     }
 
     &__text {
         font-weight: 400;
         font-size: 19px;
-        line-height: 30px;
-        color: #FFFFFF;
+        line-height: 1.6;
+        color: $color-light;
     }
 
 }
@@ -188,13 +175,9 @@
 
 
 .conversion {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-text;
     font-weight: 700;
     font-size: 30px;
-    line-height: 37px;
     margin: 10px 0 30px;
 }
 
@@ -203,7 +186,7 @@
     &__wrap-icon {
         width: 92px;
         height: 92px;
-        background-color: $text-light;
+        background-color: $color-light;
         border-radius: 24px;
         display: flex;
         align-items: center;
@@ -214,16 +197,15 @@
     &__heading {
         font-weight: 700;
         font-size: 22px;
-        line-height: 27px;
-        color: $regular-color;
+        line-height: 1.2;
+        @include link-color;
         margin-bottom: 15px;
         display: block;
     }
 
     &__description {
-        font-size: 16px;
-        line-height: 26px;
-        color: $text-light;
+        line-height: 1.6;
+        color: $color-light;
     }
 }
 
@@ -272,7 +254,7 @@
     }
 
     &__wrap-quote {
-        background-color: $bg-alt;
+        background-color: $bg-soft;
         border-radius: 0 0 12px 12px;
         padding: 30px;
         min-height: 587px;
@@ -282,13 +264,9 @@
     }
 
     &__text {
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradient-text;
         font-weight: 700;
         font-size: 30px;
-        line-height: 37px;
         margin-bottom: 30px;
     }
 
@@ -298,9 +276,7 @@
 
     &__name {
         font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: #B3B3BA;
+        color: $color-secondary;
         margin-bottom: 6px;
         display: block;
     }
@@ -309,8 +285,8 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 22px;
-        color: #B3B3BA;
+        line-height: 1.6;
+        color: $color-secondary;
     }
 
     &__slider .slick-dots {
@@ -330,10 +306,10 @@
     &__heading {
         font-weight: 700;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 1.2;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #323264;
+        color: $dark-regular;
     }
 
     &__wrapper {
@@ -406,7 +382,7 @@
 
 .publications {
     padding: 30px 0;
-    background-color: $bg-color;
+    background-color: $bg-soft;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -423,9 +399,9 @@
 }
 
 .card-public {
-    background-color: $text-light;
+    background-color: $color-light;
     min-height: 432px;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 8px 8px;
 
     &__wrap-img {
         height: 200px;
@@ -434,11 +410,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }   
 
-
-        img {
-            height: 100%;
-        }
+    &__img {
+        height: 100%;
     }
 
     &__info {
@@ -450,26 +425,39 @@
 
     &__title {
         font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: $regular-color;
+        @include link-color;
     }
 
     &__data {
         font-weight: 700;
         font-size: 12px;
-        line-height: 15px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #B3B3BA;
+        color: $color-secondary;
     }
 
     &__text {
         padding-top: 15px;
-        border-top: 4px solid #E6E6F0;
+        border-top: 4px solid $bg-separator-color;
         font-weight: 400;
         font-size: 14px;
-        line-height: 22px;
+        line-height: 1.6;
     }
 
+}
+
+
+@keyframes slogan {
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.5);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

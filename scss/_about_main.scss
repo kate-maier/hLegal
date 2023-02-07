@@ -1,3 +1,5 @@
+@import "mixins";
+
 main {
     width: 100%;
 }
@@ -6,10 +8,6 @@ main {
     padding: 30px 0 60px;
 }
 
-// .header.menu_open .about{
-//     padding-top: 300px;
-// }
-
 .about {
     width: 315px;
     margin: 0 auto;
@@ -17,11 +15,7 @@ main {
     &__heading {
         font-weight: 700;
         font-size: 30px;
-        line-height: 37px;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradient-text;
         &_idea {
             margin-bottom: 28px;
         }
@@ -33,7 +27,7 @@ main {
 
     &__text {
         font-size: 19px;
-        line-height: 30px;
+        line-height: 1.6;
 
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -65,15 +59,8 @@ main {
     &__number {
         font-weight: 700;
         font-size: 36px;
-        line-height: 44px;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;    }
-
-    &__text {
-        font-size: 16px;
-        line-height: 20px;
+        line-height: 1.2;
+        @include gradient-text;
     }
 }
 
@@ -93,10 +80,10 @@ main {
     &__heading {
         font-weight: 700;
         font-size: 36px;
-        line-height: 44px;
+        line-height: 1.2;
         letter-spacing: 13px;
         text-transform: uppercase;
-        color: #FFF;
+        color: $color-light;
         opacity: 0.8;
         text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
     }
@@ -104,7 +91,7 @@ main {
 
 
 .achieve-section {
-    background-color: $bg-color;
+    background-color: $bg-soft;
     min-height: 243px;
     display: flex;
     justify-content: center;
@@ -121,10 +108,10 @@ main {
     &__heading {
         font-weight: 700;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 1.2;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #323264;
+        color: $dark-regular;
     }
 
     &__wrap-slider {
@@ -133,7 +120,7 @@ main {
 }
 
 .achieve-section__wrap-slider .slick-initialized .slick-slide {
-    background-color: #fff;
+    background-color: $color-light;
     height: 90px;
     display: flex;
     align-items: center;

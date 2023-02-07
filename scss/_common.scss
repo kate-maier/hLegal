@@ -1,66 +1,55 @@
-
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  
-  main,
-  footer {
-    a {
-      color: $regular-color;
-  
-      &:hover {
-        color: $accent-color;
-      }
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  padding: 0;
+}
+
+
+.slick-dots {
+
+  li button {
+    background-color: $regular-color;
+    opacity: 0.2;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    transition: opacity 0.2s;
+
+    &::before {
+      content: none;
+      opacity: 1;
+    }
+
+
+    &:hover {
+      opacity: 0.4;
     }
   }
-  
-  button {
-    background: none;
-    padding: 0;
+
+  li.slick-active button {
+    color: $regular-color;
+    opacity: 1;
   }
-  
-  
-  .slick-dots {
-  
-    li button {
-        background-color: $regular-color;
-        opacity: 0.2;
-        border-radius: 50%;
-        height: 16px;
-        width: 16px;
-  
-        &::before {
-            content: none;
-            opacity: 1;
-        }
-  
-  
-        &:hover {
-            background-color: $regular-color;
-            opacity: 0.4;
-        }
-    }
-  
-    li.slick-active button {
-        color: $regular-color;
-        opacity: 1;
-    }
-  }
+}

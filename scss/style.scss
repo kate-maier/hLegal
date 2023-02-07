@@ -3,9 +3,9 @@
 @import "vars";
 @import "common";
 @import "header";
-@import "home";
+@import "home_main";
 @import "footer";
-@import "main";
+@import "about_main";
 @import "mixins";
 
 
@@ -35,9 +35,7 @@
       display: inline-block;
       position: relative;
       padding: 0 12px;
-      font-size: 16px;
-      line-height: 20px;
-      color: $text-color;
+      color: $color-secondary;
 
       &::before,
       &::after {
@@ -84,8 +82,8 @@
     &__facebook-item {
       width: 25px;
       height: 25px;
-      fill: $text-color;
-      transition: fill 0.3s;
+      fill: $color-secondary;
+      transition: fill 0.2s;
 
       &:hover {
         fill: $accent-color;
@@ -113,7 +111,7 @@
 
     &__item {
       font-size: 36px;
-      line-height: 44px;
+      line-height: 1.2;
       color: $dark-regular;
     }
 
@@ -141,13 +139,13 @@
       transition: border-bottom 0.2s;
 
       &:hover {
-        border-bottom: 2px solid $text-light;
+        border-bottom: 2px solid $color-light;
       }
 
 
       &_light {
         &:hover {
-          border-bottom: 2px solid $active-color;
+          border-bottom: 2px solid $regular-color;
         }
       }
 
@@ -162,11 +160,10 @@
 
     &__link {
       font-size: 16px;
-      line-height: 20px;
-      color: $text-light;
+      color: $color-light;
 
       &_light {
-        color: $active-color;
+        color: $regular-color;
       }
 
       &_active {
@@ -177,7 +174,7 @@
   }
 
   // Homepage Main
-  .container-main {
+  .container_dark {
     background: url(../img/Symbol.svg) no-repeat top center / auto 1024px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
 
@@ -199,7 +196,7 @@
 
     &__button {
       font-size: 38px;
-      line-height: 46px;
+      line-height: 1.2;
     }
 
     &__wrap-content {
@@ -214,12 +211,11 @@
 
     &__heading {
       font-size: 30px;
-      line-height: 37px;
     }
 
     &__text {
       font-size: 19px;
-      line-height: 30px;
+      line-height: 1.6;
     }
   }
 
@@ -232,12 +228,15 @@
       display: grid;
       grid-template-rows: 373px 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 30px;
+      grid-gap: 60px;
+      margin-top: 60px;
     }
   }
 
   .conversion {
-    margin-bottom: 60px;
+    font-size: 38px;
+    line-height: 1.2;
+    // margin-bottom: 60px;
   }
 
   // team homepage
@@ -271,7 +270,7 @@
 
     &__text {
       font-size: 38px;
-      line-height: 46px;
+      line-height: 1.2;
     }
   }
 
@@ -299,20 +298,19 @@
 
     &__wrapper-cards {
       display: grid;
-      // grid-gap: 30px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 309px 309px;
       grid-template-rows: 514px 388px;
     }
   }
 
   .card-public {
     min-height: auto;
+    
+    &__img {
 
-    &__wrap-img {
-
-      img {
-        width: 100%;
+      &_combined {
         height: auto;
+        width: 100%;
       }
     }
 
@@ -347,7 +345,7 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #B3B3BA;
+        background-color: $color-secondary;
         transform: translateY(-50%);
         right: 0;
       }
@@ -372,7 +370,7 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #B3B3BA;
+        background-color: $color-secondary;
         transform: translateY(-50%);
         right: 0;
       }
@@ -394,7 +392,7 @@
 
     &__heading {
       font-size: 38px;
-      line-height: 46px;
+      line-height: 1.2;
     }
   }
 
@@ -404,7 +402,7 @@
 
     &__heading {
       font-size: 46px;
-      line-height: 56px;
+      line-height: 1.2;
       letter-spacing: 63px;
     }
   }
@@ -466,14 +464,12 @@
 
     &__link {
       font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
     }
   }
 
   // homepage main
 
-  .container-main {
+  .container_dark {
     background: url(../img/Symbol.svg) no-repeat top center / auto 768px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
 
@@ -490,7 +486,7 @@
     &__titles {
       flex-direction: column;
       height: auto;
-      border-right: 4px solid $text-color;
+      border-right: 4px solid $color-secondary;
       padding-right: 60px;
       width: 439px;
       padding: 15px 60px 15px 0;
@@ -513,12 +509,11 @@
 
     &__heading {
       font-size: 30px;
-      line-height: 37px;
     }
 
     &__text {
       font-size: 19px;
-      line-height: 30px;
+      line-height: 1.6;
     }
   }
 
@@ -682,7 +677,7 @@
 
     &__heading {
       font-size: 86px;
-      line-height: 105px;
+      line-height: 1.2;
       letter-spacing: 63px;
     }
   }
@@ -712,7 +707,7 @@
   }
 
   // homepage main 
-  .container-main {
+  .container_dark {
     background: url(../img/Symbol.svg) no-repeat top center / auto 1000px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
 
@@ -782,6 +777,12 @@
     }
   }
 
+  .partner-company {
+    width: 1720px;
+    margin-bottom: 60px;
+
+  }
+
   // publication section 
 
   .publications {
@@ -841,7 +842,7 @@
   }
 
   // homepage main
-  .container-main {
+  .container_dark {
     background: url(../img/Symbol.svg) no-repeat top center / auto 799px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
 
@@ -899,6 +900,11 @@
       width: 860px;
     }
   }
+
+  // .partner-company {
+  //   width: 1720px;
+  //   margin-bottom: 60px;
+
 
   // publications section
 
