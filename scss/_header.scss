@@ -1,9 +1,6 @@
-@import "mixins";
-
 .header {
     margin: 0 auto;
     width: 100%;
-    // min-height: 102px;
 
     &__info-block {
         background: rgba(245, 245, 250, 0.2);
@@ -110,7 +107,7 @@
         gap: 4px;
     }
 
-    &__wrap-logo{
+    &__wrap-logo {
         height: 32px;
     }
 
@@ -150,10 +147,11 @@
             transform: translateX(-50%);
             z-index: 2;
 
+
             &__list {
-                width: 335px;
+                width: 100%;
+                height: 300px;
                 background-color: #323264;
-                border-radius: 0 0 12px 12px;
                 flex-direction: column;
                 align-items: center;
 
@@ -175,15 +173,17 @@
             }
 
             &__link {
-                // @include link-color;
                 color: $regular-color;
-                &:hover{
+
+                &:hover {
                     color: $accent-color;
                 }
             }
         }
 
         .burger-menu {
+            z-index: 4;
+
             &__line {
                 &_disappear {
                     display: none;
@@ -210,6 +210,7 @@
     }
 
 }
+
 
 // burger
 .burger-menu {

@@ -1,10 +1,9 @@
-@import "mixins";
-
 main {
     width: 100%;
 }
 
 .about-section {
+    width: 100%;
     padding: 30px 0 60px;
 }
 
@@ -13,13 +12,9 @@ main {
     margin: 0 auto;
 
     &__heading {
-        font-weight: 700;
-        font-size: 30px;
-        @include gradient-text;
-
-        &_idea {
-            margin-bottom: 28px;
-        }
+        
+        &_top{
+        margin-bottom: 28px;}
     }
 
     &__text-wrapper {
@@ -61,7 +56,10 @@ main {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.2;
-        @include gradient-text;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -88,13 +86,13 @@ main {
         color: $color-light;
         opacity: 0.8;
         text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
-        // transform: translateX(31px);
         margin-right: -63px;
     }
 }
 
 
 .achieve-section {
+    width: 100%;
     background-color: $bg-soft;
     min-height: 243px;
     display: flex;

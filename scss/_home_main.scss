@@ -10,16 +10,6 @@
     align-items: center;
 }
 
-// .fff {
-//     width: 100%;
-//     background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-// min-height: 3364px;
-// position: absolute;
-// top: 0;
-// left: 0;
-// z-index: -3;
-// }
-
 // .main-home {
 //     display: flex;
 //     flex-direction: column;
@@ -190,15 +180,20 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    &__conversion {
+        margin-bottom: 30px;
+    }
 }
 
 
 .conversion {
-    @include gradient-text;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 30px;
-    margin-bottom: 30px;
-    // margin: 10px 0 30px;
 }
 
 
@@ -227,7 +222,7 @@
     &__description {
         line-height: 1.6;
         color: $color-light;
-        
+
     }
 }
 
@@ -283,17 +278,9 @@
         background-color: $bg-soft;
         border-radius: 0 0 12px 12px;
         padding: 30px;
-        min-height: 587px;
-
+        height: 587px;
         display: flex;
         flex-direction: column;
-    }
-
-    &__text {
-        @include gradient-text;
-        font-weight: 700;
-        font-size: 30px;
-        margin-bottom: 30px;
     }
 
     &__wrap-person {
@@ -421,6 +408,7 @@
         display: flex;
         gap: 30px;
         flex-direction: column;
+        margin-top: 30px;
     }
 
     &__wrapper {

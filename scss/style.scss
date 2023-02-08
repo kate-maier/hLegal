@@ -236,7 +236,6 @@
   .conversion {
     font-size: 38px;
     line-height: 1.2;
-    // margin-bottom: 60px;
   }
 
   // team homepage
@@ -265,7 +264,7 @@
     }
 
     &__wrap-quote {
-      min-height: 436px;
+      height: 436px;
     }
 
     &__text {
@@ -390,10 +389,10 @@
   .about {
     width: 648px;
 
-    &__heading {
-      font-size: 38px;
-      line-height: 1.2;
-    }
+    // &__heading {
+    //   font-size: 38px;
+    //   line-height: 1.2;
+    // }
   }
 
   .team {
@@ -519,7 +518,10 @@
   }
 
   .advantages__button_active {
-    @include gradient-text;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .advantages__button_active:hover {
@@ -565,7 +567,7 @@
     }
 
     &__wrap-quote {
-      min-height: 528px;
+      height: 528px;
       width: 504px;
       border-radius: 0 12px 12px 0;
     }
@@ -662,7 +664,7 @@
     }
 
     &__heading {
-      &_quality {
+      &_bottom {
         width: 362px;
 
       }
@@ -775,7 +777,7 @@
 
     &__wrap-quote {
       width: 1200px;
-      min-height: 298px;
+      height: 298px;
     }
 
     &__text {
@@ -899,7 +901,7 @@
 
     &__wrap-quote {
       width: 920px;
-      min-height: 344px;
+      height: 344px;
     }
 
     &__text {
