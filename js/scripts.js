@@ -6,12 +6,6 @@ burger.onclick = function () {
     header.classList.toggle("menu_open");
 };
 
-// $(function() {
-//     $(".burger-menu").click(function() {
-//         $(".nav").toggleClass("open");
-//     });
-// } )
-
 
 // buttons change color language
 

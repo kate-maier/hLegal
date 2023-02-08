@@ -30,3 +30,13 @@
      color: #F0145A;
    }
  }
+
+ @mixin circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+ }
