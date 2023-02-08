@@ -123,11 +123,13 @@
 
   // navigation
   .nav {
+    position: static;
     display: flex;
     justify-content: center;
 
     &__list {
       width: 648px;
+      display: flex;
     }
 
     &__item {
@@ -581,10 +583,6 @@
     }
   }
 
-  // .about-team .slick-initialized .slick-slide {
-  //   display: flex;
-  // }
-
   // trust-company section
   .partner-company {
     &__wrapper {
@@ -908,11 +906,6 @@
       width: 860px;
     }
   }
-
-  // .partner-company {
-  //   width: 1720px;
-  //   margin-bottom: 60px;
-
 
   // publications section
 
