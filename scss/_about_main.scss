@@ -8,9 +8,10 @@
     margin: 0 auto;
 
     &__heading {
-        
-        &_top{
-        margin-bottom: 28px;}
+
+        &_top {
+            margin-bottom: 28px;
+        }
     }
 
     &__text-wrapper {
@@ -29,7 +30,7 @@
 
 .experience {
     border-left: 4px solid $bg-separator-color;
-    padding-left: 34px;
+    padding-left: 30px;
 
     &__years {
         &:not(:last-child) {
@@ -38,7 +39,12 @@
     }
 
     &__wrap-year {
+        display: flex;
+        height: 44px;
+        flex-direction: row;
         margin-bottom: 10px;
+        gap: 8px;
+        align-items: center;
     }
 
     &__icon {
@@ -82,7 +88,6 @@
         color: $color-light;
         opacity: 0.8;
         text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
-        margin-right: -63px;
     }
 }
 

@@ -19,7 +19,7 @@
     flex-direction: column;
     gap: 30px;
     padding-top: 52px;
-    height: 116px;
+    height: 220px;
 
     &__info-block {
       background-color: transparent;
@@ -124,6 +124,7 @@
       display: flex;
       flex-direction: row;
       height: 25px;
+      align-items: flex-end;
     }
 
     &__link {
@@ -163,18 +164,6 @@
       }
     }
 
-    // &__link {
-      
-
-    //   &_light {
-    //     color: $regular-color;
-    //   }
-
-    //   &_active {
-    //     color: $accent-color;
-    //     cursor: auto;
-    //   }
-    // }
   }
 
   // Homepage Main
@@ -298,6 +287,10 @@
       width: 648px;
     }
 
+    &__pages-link {
+      margin-bottom: 10px;
+    }
+
     &__wrapper-cards {
       display: grid;
       grid-template-columns: 309px 309px;
@@ -389,6 +382,7 @@
       font-size: 46px;
       line-height: 1.2;
       letter-spacing: 63px;
+      margin-right: -63px;
     }
   }
 
@@ -427,6 +421,8 @@
     flex-direction: row;
     gap: 0;
     justify-content: space-between;
+    height: 116px;
+
 
     &__info-block {
       position: absolute;
