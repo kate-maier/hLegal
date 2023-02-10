@@ -135,6 +135,11 @@
         font-size: 20px;
         line-height: 1.2;
         color: #323264;
+
+        
+      &_dark{
+        color: $color-light;
+    }
     }
 
     // menu-open

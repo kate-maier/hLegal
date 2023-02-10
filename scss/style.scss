@@ -6,6 +6,7 @@
 @import "home_main";
 @import "footer";
 @import "about_main";
+@import "services_main";
 @import "mixins";
 
 
@@ -101,7 +102,7 @@
     &__item {
       font-size: 36px;
       line-height: 1.2;
-      color: $dark-regular;
+      // color: $dark-regular;
     }
 
   }
@@ -222,7 +223,10 @@
       grid-template-rows: 373px 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-gap: 60px;
-      margin-top: 60px;
+    }
+
+    &__conversion {
+      margin-bottom: 60px;
     }
   }
 
@@ -231,9 +235,10 @@
     line-height: 1.2;
   }
 
-  // team homepage
-  .about-team {
 
+  // team homepage
+
+  .container_light {
     &::before {
       width: 728px;
     }
@@ -241,6 +246,10 @@
     &::after {
       width: 688px;
     }
+
+  }
+
+  .about-team {
 
     // team slider
     &__slider {
@@ -406,6 +415,15 @@
     }
   }
 
+  // services page
+  .services {
+    &__conversion {
+        &_service-page {
+            margin-top: 60px;
+        }
+    }
+}
+
 }
 
 
@@ -526,8 +544,7 @@
     }
   }
 
-  .about-team {
-
+  .container_light {
     &::before {
       width: 984px;
     }
@@ -535,7 +552,9 @@
     &::after {
       width: 944px;
     }
+  }
 
+  .about-team {
     // team slider
 
     &__slider {
@@ -733,7 +752,7 @@
   }
 
   // team homepage
-  .about-team {
+  .container_light {
 
     &::before {
       width: 1880px;
@@ -742,6 +761,10 @@
     &::after {
       width: 1840px;
     }
+
+  }
+
+  .about-team {
 
     // team slider
     &__slider {
@@ -855,7 +878,8 @@
   }
 
   // team homepage
-  .about-team {
+
+  .container_light {
 
     &::before {
       width: 1400px;
@@ -864,6 +888,9 @@
     &::after {
       width: 1360px;
     }
+  }
+
+  .about-team {
 
     // slider
 

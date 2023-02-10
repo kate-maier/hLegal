@@ -172,14 +172,13 @@
     }
 }
 
-.about-team {
+.container_light{
+    width: 100%;
     position: relative;
-    padding: 80px 0 40px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    &__pages-link {
-        margin-bottom: 5px;
-    }
 
     &:before {
         content: "";
@@ -205,6 +204,15 @@
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+.about-team {
+    padding: 80px 0 40px;
+    margin-bottom: 60px;
+
+    &__pages-link {
+        margin-bottom: 5px;
     }
 
     &__slider {
