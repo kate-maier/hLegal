@@ -418,14 +418,13 @@
   // services page
   .services {
     &__conversion {
-        &_service-page {
-            margin-top: 60px;
-        }
+      &_service-page {
+        margin-top: 60px;
+      }
     }
-}
+  }
 
 }
-
 
 
 
@@ -495,6 +494,13 @@
       padding: 15px 60px 15px 0;
       gap: 30px;
       align-items: end;
+
+      li {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
     }
 
     &__button {
