@@ -1,0 +1,90 @@
+.team-members {
+    width: 315px;
+    padding: 30px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__cards {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 30px;
+
+    }
+
+    &__wrap-img {
+        height: 300px;
+        width: 315px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__wrap-person {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+    }
+
+    &__link {
+        display: block;
+
+        &:hover {
+            .team-members {
+                &__arrow {
+                    stroke: $accent-color;
+                }
+
+                &__wrap-arrow {
+                    background-color: $bg-alt;
+                }
+
+                &__name {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $dark-regular;
+    }
+
+    &__position {
+        font-size: 14px;
+        line-height: 1.6;
+        color: $color-secondary;
+    }
+
+    &__wrap-arrow {
+        width: 32px;
+        height: 32px;
+        background-color: $bg-soft;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__arrow {
+        display: block;
+        width: 18px;
+        height: 18px;
+        stroke: #24A3FF;
+    }
+
+}

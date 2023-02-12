@@ -7,6 +7,7 @@
 @import "footer";
 @import "about_main";
 @import "services_main";
+@import "team_main";
 @import "mixins";
 
 
@@ -424,6 +425,30 @@
     }
   }
 
+  // team-members page
+
+  .team-members {
+    width: 648px;
+    padding-top: 60px;
+
+    &__cards {
+      margin-top: 60px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 60px;
+    }
+
+    &__wrap-img {
+      height: 400px;
+      width: 294px;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
 }
 
 
@@ -712,6 +737,29 @@
     height: 60px;
   }
 
+  // team-members page
+
+  .team-members {
+    width: 904px;
+
+    &__conversion {
+      width: 664px;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__wrap-img {
+      width: 262px;
+    }
+
+    &__position {
+      width: 214px;
+    }
+  }
+
 }
 
 
@@ -852,6 +900,30 @@
     width: 1600px;
   }
 
+  // team-members page
+
+  .team-members {
+    width: 1600px;
+
+    &__conversion {
+      width: 1360px;
+    }
+
+    &__wrap-img {
+      width: 493px;
+      height: 400px;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__position {
+      width: auto;
+    }
+  }
+
 }
 
 @include desktopSD {
@@ -970,6 +1042,25 @@
 
   .achieve-section__wrap-slider {
     width: 1320px;
+  }
+
+  // team-members page
+  
+  .team-members {
+    width: 1320px;
+
+    &__conversion {
+      width: 1080px;
+    }
+
+    &__wrap-img {
+      width: 400px;
+      height: 400px;
+    }
+
+    &__position {
+      width: auto;
+    }
   }
 
 }
