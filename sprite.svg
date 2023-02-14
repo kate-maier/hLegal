@@ -33,7 +33,7 @@
     </symbol>
     <symbol id="scroll" viewBox="0 0 42 42" fill="none">
         <circle opacity="0.5" cx="21" cy="21" r="20" stroke-width="2" />
-        <path d="M12 18L21 27L30 18" stroke-width="2" />
+        <path d="M12 18L21 27L30 18" stroke-width="2"/>
     </symbol>
     <symbol id="arrow" viewBox="0 0 12 13" fill="none">
         <path d="M3.5 2L8 6.5L3.5 11" stroke-width="2" />
