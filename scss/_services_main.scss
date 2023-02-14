@@ -1,9 +1,10 @@
 .container_dark-gradient {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background: none, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 102px;
 }
 
 .services {
@@ -17,6 +18,5 @@
 .container {
     &_services {
         padding-top: 80px;
-        ;
     }
 }

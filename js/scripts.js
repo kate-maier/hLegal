@@ -7,19 +7,13 @@ burger.onclick = function () {
 };
 
 
-// buttons change color language
-
 $(document).ready(function () {
+    // buttons change color language
     $('.header__lang li button').click(function () {
         $('.header__lang li button').removeClass("header__lang-button_active");
         $(this).addClass("header__lang-button_active");
     });
-});
-
-
-//Плавная прокрутка. Якоря
-//вместо a[href^="#"] можно добавлять класс cсылки или индификатор
-$(document).ready(function () {
+    //Плавная прокрутка. Якоря
     $('a[href^="#services"]').bind("click", function (e) {
         var anchor = $(this);
         $('html, body').stop().animate({
@@ -27,38 +21,17 @@ $(document).ready(function () {
         }, 800);
         e.preventDefault();
     });
-    return false;
-});
-
-// buttons change color advantages
-
-$(document).ready(function () {
+    // buttons change color advantages
     $('.advantages__titles li button').click(function () {
         $('.advantages__titles li button').removeClass("advantages__button_active");
         $(this).addClass("advantages__button_active");
     });
-});
-
-// appearance text
-$(document).on('click', '.advantages__button', function () {
-    var show = $(this).data('show');
-    $(show).removeClass("advantages__wrap-content_hide").siblings().addClass("advantages__wrap-content_hide");
-});
-
-
-// carousel homepage
-
-$(document).ready(function () {
+    // carousel homepage
     $('.about-team__slider').slick({
         dots: true,
         arrows: false
     });
-});
-
-
-// carousel about-page
-
-$(document).ready(function () {
+    // carousel about-page
     $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -77,4 +50,11 @@ $(document).ready(function () {
         ]
     });
 });
+
+// appearance text
+$(document).on('click', '.advantages__button', function () {
+    var show = $(this).data('show');
+    $(show).removeClass("advantages__wrap-content_hide").siblings().addClass("advantages__wrap-content_hide");
+});
+
 

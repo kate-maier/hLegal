@@ -17,6 +17,7 @@
 
   // min-width: 768px
   .header {
+    width: 648px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -26,10 +27,11 @@
     &__info-block {
       background-color: transparent;
       min-height: auto;
+      justify-content: flex-start;
     }
 
     &__inner-container {
-      width: 648px;
+      width: 100%;
       justify-content: flex-start;
       gap: 6px;
     }
@@ -39,12 +41,17 @@
       position: relative;
       padding: 0 12px;
       color: $color-secondary;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $accent-color;
+      }
 
       &::before,
       &::after {
         @include circle;
         content: "";
-        right: 0px;
+        right: 0;
         background-color: $bg-separator-color;
       }
 
@@ -62,7 +69,7 @@
         @include circle;
         content: "";
         background-color: $bg-separator-color;
-        right: 0px;
+        right: 0;
       }
     }
 
@@ -81,7 +88,7 @@
       }
     }
 
-    &__title-block {
+    &__logo-block {
       min-height: auto;
     }
 
@@ -103,7 +110,6 @@
     &__item {
       font-size: 36px;
       line-height: 1.2;
-      // color: $dark-regular;
     }
 
   }
@@ -116,17 +122,15 @@
   .nav {
     position: static;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: inherit;
     padding-top: 0;
-    height: auto;
 
     &__list {
-      width: 648px;
       display: flex;
       flex-direction: row;
-      height: 25px;
       align-items: flex-end;
+      padding: 0;
     }
 
     &__link {
@@ -171,16 +175,20 @@
   // Homepage Main
   .container_dark {
     background-size: auto 1024px, auto;
+
+    &::before {
+      width: 728px;
+    }
+
+    &::after {
+      width: 688px;
+    }
   }
 
   .slogan {
-    min-height: 804px;
-    padding-top: 269px;
+    height: 1024px;
+    width: auto;
     margin-bottom: 60px;
-
-    &__heading {
-      width: 648px;
-    }
   }
 
   .advantages {
@@ -238,19 +246,8 @@
 
 
   // team homepage
-
-  .container_light {
-    &::before {
-      width: 728px;
-    }
-
-    &::after {
-      width: 688px;
-    }
-
-  }
-
   .about-team {
+    padding-top: 80px;
 
     // team slider
     &__slider {
@@ -332,9 +329,14 @@
       width: 648px;
     }
 
+    &__wrap-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__address-wrap {
       flex-direction: row;
-      width: 398px;
     }
 
     &__address {
@@ -392,7 +394,6 @@
       font-size: 46px;
       line-height: 1.2;
       letter-spacing: 63px;
-      margin-right: -63px;
     }
   }
 
@@ -417,6 +418,10 @@
   }
 
   // services page
+  .container_dark-gradient {
+    padding-top: 220px;
+  }
+
   .services {
     &__conversion {
       &_service-page {
@@ -459,32 +464,35 @@
   // header
   .header {
     width: 904px;
-    position: relative;
-    flex-direction: row;
-    gap: 0;
-    justify-content: space-between;
     height: 116px;
-
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo-block info-block"
+      "logo-block nav";
+    grid-gap: 16px;
 
     &__info-block {
-      position: absolute;
-      right: 0;
-      z-index: 4;
+      justify-content: flex-end;
+      grid-area: info-block;
     }
 
     &__inner-container {
       width: auto;
+    }
 
+    &__logo-block {
+      grid-area: logo-block;
+      justify-content: flex-start;
     }
   }
 
   .nav {
     align-items: flex-end;
     justify-content: flex-end;
-    width: auto;
+    grid-area: nav;
 
     &__list {
-      width: auto;
       align-items: flex-end;
     }
 
@@ -498,11 +506,17 @@
   .container_dark {
     background-size: auto 768px, auto;
 
+    &::before {
+      width: 984px;
+    }
+
+    &::after {
+      width: 944px;
+    }
   }
 
   .slogan {
-    min-height: 652px;
-    padding-top: 245px;
+    height: 768px;
   }
 
   .advantages {
@@ -575,16 +589,6 @@
     }
   }
 
-  .container_light {
-    &::before {
-      width: 984px;
-    }
-
-    &::after {
-      width: 944px;
-    }
-  }
-
   .about-team {
     // team slider
 
@@ -605,7 +609,6 @@
 
     &__wrap-quote {
       height: 528px;
-      width: 504px;
       border-radius: 0 12px 12px 0;
     }
 
@@ -661,11 +664,6 @@
     height: 139px;
 
     &__container {
-      width: auto;
-    }
-
-    &__inner {
-      position: relative;
       width: 904px;
     }
 
@@ -673,10 +671,18 @@
       margin-bottom: 0;
     }
 
+    &__wrap-info {
+      height: 79px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+
     &__copyright {
-      position: absolute;
-      right: 0;
-      top: 0;
+      display: flex;
+      height: 100%;
     }
   }
 
@@ -737,6 +743,12 @@
     height: 60px;
   }
 
+  // services page
+  .container_dark-gradient {
+    padding-top: 116px;
+  }
+
+
   // team-members page
 
   .team-members {
@@ -773,11 +785,18 @@
   // homepage main 
   .container_dark {
     background-size: auto 1000px, auto;
+
+    &::before {
+      width: 1880px;
+    }
+
+    &::after {
+      width: 1840px;
+    }
   }
 
   .slogan {
-    min-height: 884px;
-    padding-top: 361px;
+    height: 1000px;
   }
 
   .advantages {
@@ -806,18 +825,6 @@
   }
 
   // team homepage
-  .container_light {
-
-    &::before {
-      width: 1880px;
-    }
-
-    &::after {
-      width: 1840px;
-    }
-
-  }
-
   .about-team {
 
     // team slider
@@ -836,7 +843,6 @@
     }
 
     &__wrap-quote {
-      width: 1200px;
       height: 298px;
     }
 
@@ -873,8 +879,9 @@
   // footer
 
   .footer {
+    height: 171px;
 
-    &__inner {
+    &__container {
       width: 1600px;
     }
   }
@@ -894,6 +901,10 @@
 
   .team {
     height: 584px;
+
+    &__heading {
+      font-size: 96px;
+    }
   }
 
   .achieve-section__wrap-slider {
@@ -936,11 +947,18 @@
   // homepage main
   .container_dark {
     background-size: auto 799px, auto;
+
+    &::before {
+      width: 1400px;
+    }
+
+    &::after {
+      width: 1360px;
+    }
   }
 
   .slogan {
-    min-height: 684px;
-    padding-top: 261px;
+    height: 800px;
   }
 
   .advantages {
@@ -956,18 +974,6 @@
   }
 
   // team homepage
-
-  .container_light {
-
-    &::before {
-      width: 1400px;
-    }
-
-    &::after {
-      width: 1360px;
-    }
-  }
-
   .about-team {
 
     // slider
@@ -988,7 +994,6 @@
     }
 
     &__wrap-quote {
-      width: 920px;
       height: 344px;
     }
 
@@ -1017,10 +1022,12 @@
   // footer
 
   .footer {
+    height: 139px;
 
-    &__inner {
-      width: 1320px;
+    &__container {
+      width: 1320px
     }
+
   }
 
   // MAIN ABOUT-PAGE
@@ -1038,6 +1045,10 @@
 
   .team {
     height: 438px;
+
+    &__heading {
+      font-size: 96px;
+    }
   }
 
   .achieve-section__wrap-slider {
@@ -1045,7 +1056,7 @@
   }
 
   // team-members page
-  
+
   .team-members {
     width: 1320px;
 

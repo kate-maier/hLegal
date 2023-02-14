@@ -1,27 +1,51 @@
 @import "mixins";
 
 .container_dark {
-    background: url(../img/Symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    border-radius: 0px 0px 12px 12px;
+    background: url(../img/symbol.svg) no-repeat top center / auto 600px, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0 0 12px 12px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
+    &:before {
+        content: "";
+        display: block;
+        width: 335px;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 295px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,10px);
+    }
 }
 
 .slogan {
-    width: 100%;
-    min-height: 498px;
-    display: flex;
-    justify-content: center;
+    height: 600px;
+    width: 315px;
     position: relative;
     margin-bottom: 30px;
-    padding-top: 129px;
+    display: grid;
+    place-items: center;
 
     &__heading {
-        width: 315px;
-        height: 138px;
         font-weight: 700;
         font-size: 38px;
         line-height: 1.2;
@@ -177,42 +201,17 @@
 
 .container_light{
     width: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
-    &:before {
-        content: "";
-        display: block;
-        width: 335px;
-        height: 10px;
-        background: #CACADB;
-        border-radius: 0px 0px 12px 12px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    &:after {
-        content: "";
-        display: block;
-        width: 295px;
-        height: 10px;
-        background: #E7E7F2;
-        border-radius: 0px 0px 12px 12px;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
 
 .about-team {
-    padding: 80px 0 40px;
+    padding: 50px 0 40px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__pages-link {
         margin-bottom: 5px;
@@ -228,7 +227,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 12px 12px 0px 0px;
+        border-radius: 12px 12px 0 0;
     }
 
     &__wrap-quote {
@@ -285,7 +284,6 @@
     &__wrapper {
         margin-top: 30px;
         width: 100%;
-
     }
 
     &__wrap-img {
@@ -376,12 +374,12 @@
 .card-public {
     background-color: $color-light;
     min-height: 432px;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px;
 
     &__wrap-img {
         height: 200px;
         overflow: hidden;
-        border-radius: 8px 8px 0px 0px;
+        border-radius: 8px 8px 0 0;
         display: flex;
         align-items: center;
         justify-content: center;

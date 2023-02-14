@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/Symbol.svg" />
+    <link rel="icon" type="image/x-icon" href="img/symbol.svg" />
     <link rel="stylesheet" href="css/styles_slick/slick-theme.min.css">
     <link rel="stylesheet" href="css/styles_slick/slick.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -17,62 +17,63 @@
 
 <body>
     <div id="container" class="container">
+        <header id="header" class="header header_dark">
+            <!-- first line -->
+            <div class="header__info-block">
+                <div class="header__inner-container">
+                    <ul class="header__lang">
+                        <li><button class="header__lang-button">ук</button></li>
+                        <li><button class="header__lang-button">ру</button></li>
+                        <li><button class="header__lang-button header__lang-button_active">en</button></li>
+                    </ul>
+                    <a class="header__address" href="https://goo.gl/maps/gais6Ypfb8HCMStz5">Kyiv, Mechnikova
+                        str., 14/1</a>
+                    <a class="header__phone" href="tel:0800211972">0800 211 927</a>
+                    <a class="header__facebook" href="#">
+                        <svg class="header__facebook-item">
+                            <use href="sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- second line -->
+            <div class="header__logo-block">
+                <div class="header__inner-container">
+                    <div class="header__logo-info">
+                        <div class="header__wrap-logo">
+                            <img class="header__logo" src="img/logo_dark_theme.svg" alt="Company logo">
+                        </div>
+                    </div>
+                    <button id="burger-icon" class="burger-menu">
+                        <span class="burger-menu__line burger-menu__line_top"></span>
+                        <span class="burger-menu__line burger-menu__line_middle"></span>
+                        <span class="burger-menu__line burger-menu__line_disappear"></span>
+                    </button>
+                </div>
+            </div>
+            <!-- list menu -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="pages/about.html">about us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="pages/services.html">services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="pages/team.html">team</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="pages/page_plug.html">publications</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="pages/page_plug.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <div class="container_dark">
-                <header id="header" class="header">
-                    <!-- first line -->
-                    <div class="header__info-block">
-                        <div class="header__inner-container">
-                            <ul class="header__lang">
-                                <li><button class="header__lang-button">ук</button></li>
-                                <li><button class="header__lang-button">ру</button></li>
-                                <li><button class="header__lang-button header__lang-button_active">en</button></li>
-                            </ul>
-                            <p class="header__address">Kyiv, Mechnikova str., 14/1</p>
-                            <a class="header__phone" href="tel:0800211972">0800 211 927</a>
-                            <a class="header__facebook" href="#">
-                                <svg class="header__facebook-item">
-                                    <use href="sprite.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- second line -->
-                    <div class="header__title-block">
-                        <div class="header__inner-container">
-                            <div class="header__title-info">
-                                <div class="header__wrap-logo">
-                                    <img class="header__logo" src="img/Logo_dark_theme.svg" alt="Company logo">
-                                </div>
-                            </div>
-                            <button id="burger-icon" class="burger-menu">
-                                <span class="burger-menu__line burger-menu__line_top"></span>
-                                <span class="burger-menu__line burger-menu__line_middle"></span>
-                                <span class="burger-menu__line burger-menu__line_disappear"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- list menu -->
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link" href="pages/about.html">about us</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="pages/services.html">services</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="pages/team.html">team</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="pages/publications.html">publications</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="pages/contact.html">contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
                 <section class="slogan">
                     <h1 class="slogan__heading">you legal solutions provider</h1>
                     <a class="slogan__arrow" href="#services"><svg class="slogan__item">
@@ -97,24 +98,20 @@
                         </div>
                         <div class="advantages__wrap-content customer advantages__wrap-content_hide">
                             <h4 class="advantages__heading">Lorem ipsum dolor sit amet.</h4>
-                            <p class="advantages__text">Consolidating many years of experience and practice, the
-                                company's lawyers accompany complex projects and achieve a number of important decisions
-                                for the industry. Many of them form the practice of applying the law of the sea in
-                                Ukraine.</p>
+                            <p class="advantages__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                non asperiores explicabo velit similique? Neque fuga quidem aliquid. Reprehenderit iusto
+                                minus optio nulla aperiam ipsam veniam excepturi atque natus nemo.</p>
                         </div>
                         <div class="advantages__wrap-content innovative advantages__wrap-content_hide">
                             <h4 class="advantages__heading">Lorem Doloremque, nemo?</h4>
-                            <p class="advantages__text">Consolidating many years of experience and practice, the
-                                company's lawyers accompany complex projects and achieve a number of important decisions
-                                for the industry. Many of them form the practice of applying the law of the sea in
-                                Ukraine.</p>
+                            <p class="advantages__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nesciunt, magni!</p>
                         </div>
                         <div class="advantages__wrap-content business advantages__wrap-content_hide">
                             <h4 class="advantages__heading">Lorem, ipsum.</h4>
-                            <p class="advantages__text">Consolidating many years of experience and practice, the
-                                company's lawyers accompany complex projects and achieve a number of important decisions
-                                for the industry. Many of them form the practice of applying the law of the sea in
-                                Ukraine.</p>
+                            <p class="advantages__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Repellat assumenda unde corrupti consequatur suscipit accusamus, deserunt ducimus non
+                                odio debitis.</p>
                         </div>
                     </div>
                 </section>
@@ -124,62 +121,61 @@
                             <use href="sprite.svg#arrow"></use>
                         </svg>
                     </a>
-                    <h3 class="services__conversion conversion">What can we do better than others?</h3>
+                    <h2 class="services__conversion conversion">What can we do better than others?</h2>
                     <div class="services__wrap-cards">
                         <div class="services__card card-service">
                             <div class="card-service__wrap-icon">
-                                <img src="img/icons_services/Ecommerce.svg" alt="Services icon">
+                                <img src="img/icons_services/ecommerce.svg" alt="Services icon">
                             </div>
-                            <a href="pages/services_entry/services_one.html" class="card-service__heading">IT and
-                                e-commerce</a>
+                            <h3><a href="pages/page_plug.html" class="card-service__heading">IT and
+                                    e-commerce</a></h3>
                             <p class="card-service__description">An endless stream of contracts, tax issues, labor
                                 relations, corporate papers - legal work distracts you from doing business. But there is
                                 not much work to do to hire an in-house lawyer.</p>
                         </div>
                         <div class="services__card card-service">
-                            <div class="card-service__wrap-icon"><img src="img/icons_services/Support.svg"
+                            <div class="card-service__wrap-icon"><img src="img/icons_services/support.svg"
                                     alt="Services icon"></div>
-                            <a href="pages/services_entry/services_two.html" class="card-service__heading">Comprehensive
-                                daily legal support</a>
+                            <h3><a href="pages/page_plug.html" class="card-service__heading">Comprehensive
+                                    daily legal support</a></h3>
                             <p class="card-service__description">In addition, over time, the work will become the same
                                 type and uninteresting for a full-time lawyer. And we know very well how difficult it is
                                 to find a good candidate with experience in the field of information technology in
                                 Ukraine.</p>
                         </div>
                         <div class="services__card card-service">
-                            <div class="card-service__wrap-icon"><img src="img/icons_services/Coprorate.svg"
+                            <div class="card-service__wrap-icon"><img src="img/icons_services/coprorate.svg"
                                     alt="Services icon">
                             </div>
-                            <a href="pages/services_entry/services_three.html" class="card-service__heading">Structuring
-                                corporate relationships</a>
+                            <h3><a href="pages/page_plug.html" class="card-service__heading">Structuring
+                                    corporate relationships</a></h3>
                             <p class="card-service__description">Instead of just providing legal services, we will hire
                                 a lawyer or a whole team that will fit into the daily life of your company.</p>
                         </div>
                         <div class="services__card card-service">
-                            <div class="card-service__wrap-icon"><img src="img/icons_services/Trust.svg"
+                            <div class="card-service__wrap-icon"><img src="img/icons_services/trust.svg"
                                     alt="Services icon"></div>
-                            <a href="pages/services_entry/services_four.html" class="card-service__heading">Building
-                                contractual relations</a>
+                            <h3><a href="pages/page_plug.html" class="card-service__heading">Building
+                                    contractual relations</a></h3>
                             <p class="card-service__description">Once a week, or week after month, you have your own
                                 lawyer by your side. Anyone in the company can catch it at the coffee maker and just
                                 talk about current affairs instead of waiting for update status.</p>
                         </div>
                         <div class="services__card card-service">
-                            <div class="card-service__wrap-icon"><img src="img/icons_services/Protection.svg"
+                            <div class="card-service__wrap-icon"><img src="img/icons_services/protection.svg"
                                     alt="Services icon">
                             </div>
-                            <a href="pages/services_entry/services_five.html" class="card-service__heading">Protection
-                                of
-                                business, intellectual property</a>
+                            <h3><a href="pages/page_plug.html" class="card-service__heading">Protection of business,
+                                    intellectual property</a></h3>
                             <p class="card-service__description">And all the other time he will work on new diverse
                                 projects, so he will definitely not stop in professional development. One way or
                                 another, all Axon Partners will work for you instead of a corporate lawyer.</p>
                         </div>
                         <div class="services__card card-service">
-                            <div class="card-service__wrap-icon"><img src="img/icons_services/Court.svg"
+                            <div class="card-service__wrap-icon"><img src="img/icons_services/court.svg"
                                     alt="Services icon"></div>
-                            <a href="pages/services_entry/services_six.html" class="card-service__heading">Judicial
-                                representation</a>
+                            <h3><a href="pages/page_plug.html" class="card-service__heading">Judicial
+                                    representation</a></h3>
                             <p class="card-service__description">Is it a small, medium-sized company or a market leader?
                                 Local business or multinational company? Do you have your own legal department or not?
                             </p>
@@ -191,7 +187,7 @@
                 <section class="about-team">
                     <div class="about-team__slider">
                         <div class="about-team__slider-content">
-                            <div class="about-team__wrap-img"><img src="img/team/Team_one.png"
+                            <div class="about-team__wrap-img"><img src="img/team/team_one.png"
                                     alt="Managing partner's photo">
                             </div>
                             <div class="about-team__wrap-quote">
@@ -209,7 +205,8 @@
                             </div>
                         </div>
                         <div class="about-team__slider-content">
-                            <div class="about-team__wrap-img"><img src="#" alt="Managing partner's photo">
+                            <div class="about-team__wrap-img"><img src="img/team/team_one.png"
+                                    alt="Managing partner's photo">
                             </div>
                             <div class="about-team__wrap-quote">
                                 <a href="pages/team.html" class="pages-link">команда <svg class="pages-link__arrow">
@@ -225,7 +222,8 @@
                             </div>
                         </div>
                         <div class="about-team__slider-content">
-                            <div class="about-team__wrap-img"><img src="#" alt="Managing partner's photo">
+                            <div class="about-team__wrap-img"><img src="img/team/team_one.png"
+                                    alt="Managing partner's photo">
                             </div>
                             <div class="about-team__wrap-quote">
                                 <a href="pages/team.html" class="pages-link">команда <svg class="pages-link__arrow">
@@ -243,7 +241,7 @@
                     </div>
                 </section>
                 <section class="partner-company">
-                    <h3 class="partner-company__heading">They already trust us</h3>
+                    <h2 class="partner-company__heading">They already trust us</h2>
                     <div class="partner-company__wrapper">
                         <div class="partner-company__wrap-img"><img src="img/company_logo/hillel.png" alt="Hillel logo">
                         </div>
@@ -283,20 +281,19 @@
                 </section>
                 <section class="publications">
                     <div class="publications__wrapper">
-                        <a href="pages/publications.html" class="publications__pages-link pages-link">Publications
+                        <a href="pages/page_plug.html" class="publications__pages-link pages-link">Publications
                             <svg class="pages-link__arrow">
                                 <use href="sprite.svg#arrow"></use>
                             </svg>
                         </a>
-                        <h3 class="conversion">We have something to tell</h3>
+                        <h2 class="conversion">We have something to tell</h2>
                         <div class="publications__wrapper-cards">
                             <div class="publications__card card-public">
                                 <div class="card-public__wrap-img"><img class="card-public__img"
-                                        src="img/publications/Publication_one.png" alt="publication image"></div>
+                                        src="img/publications/publication_one.png" alt="publication image"></div>
                                 <div class="card-public__info">
-                                    <a href="pages/publications_entry/publication_one.html"
-                                        class="card-public__title">Equity
-                                        associate</a>
+                                    <h4><a href="pages/page_plug.html" class="card-public__title">Equity
+                                            associate</a></h4>
                                     <span class="card-public__data">April 22</span>
                                     <p class="card-public__text">I'm a jun on projects. I am a co-owner of a law firm.
                                         How
@@ -305,12 +302,11 @@
                             </div>
                             <div class="publications__card card-public">
                                 <div class="card-public__wrap-img"><img class="card-public__img"
-                                        src="img/publications/Publication_two.png" alt="publication image"></div>
+                                        src="img/publications/publication_two.png" alt="publication image"></div>
                                 <div class="card-public__info">
-                                    <a href="pages/publications_entry/publication_two.html"
-                                        class="card-public__title">Penalty
-                                        for the Good Corporation: what will
-                                        happen to Google and others for violating the GDPR</a>
+                                    <h4><a href="pages/page_plug.html" class="card-public__title">Penalty
+                                            for the Good Corporation: what will
+                                            happen to Google and others for violating the GDPR</a></h4>
                                     <span class="card-public__data">September 29</span>
                                     <p class="card-public__text">And why the recovery of 50 million euros could be a
                                         fateful
@@ -322,10 +318,10 @@
                             <div class="publications__card card-public">
                                 <div class="card-public__wrap-img"><img
                                         class="card-public__img card-public__img_combined"
-                                        src="img/publications/Publication_three.png" alt="publication image"></div>
+                                        src="img/publications/publication_three.png" alt="publication image"></div>
                                 <div class="card-public__info">
-                                    <a href="pages/publications_entry/publication_three.html"
-                                        class="card-public__title">Millennial Testament</a>
+                                    <h4><a href="pages/page_plug.html" class="card-public__title">Millennial
+                                            Testament</a></h4>
                                     <span class="card-public__data">August 19</span>
                                     <p class="card-public__text">What and how modern vloggers, opinion leaders and
                                         crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
@@ -339,19 +335,21 @@
         </main>
         <footer class="footer">
             <div class="footer__container">
-                <div class="footer__inner">
-                    <div class="footer__address-wrap">
-                        <span class="footer__address">Kyiv, Mechnikova str., 14/1</span>
-                        <a class="footer__on-map" href="https://goo.gl/maps/gais6Ypfb8HCMStz5">on map</a>
-                    </div>
-                    <div class="footer__contact">
-                        <a class="footer__facebook" href="#">
-                            <svg class="footer__facebook-item">
-                                <use href="sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                        <span class="footer__phone">0800 211 927</span>
-                        <a class="footer__email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                <div class="footer__wrap-info">
+                    <div>
+                        <div class="footer__address-wrap">
+                            <span class="footer__address">Kyiv, Mechnikova str., 14/1</span>
+                            <a class="footer__on-map" href="https://goo.gl/maps/gais6Ypfb8HCMStz5">on map</a>
+                        </div>
+                        <div class="footer__contact">
+                            <a class="footer__facebook" href="#">
+                                <svg class="footer__facebook-item">
+                                    <use href="sprite.svg#facebook_footer"></use>
+                                </svg>
+                            </a>
+                            <span class="footer__phone">0800 211 927</span>
+                            <a class="footer__email" href="#">contact@forstudy.space</a>
+                        </div>
                     </div>
                     <span class="footer__copyright">&#169; 2021 HLEGAL Law company, LLC</span>
                 </div>
