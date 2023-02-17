@@ -1,5 +1,4 @@
 // // Burger
-
 let burger = document.querySelector("#burger-icon");
 let header = document.querySelector("#header");
 burger.onclick = function () {
@@ -12,7 +11,7 @@ $(document).ready(function () {
         $('.header__lang li button').removeClass("header__lang-button_active");
         $(this).addClass("header__lang-button_active");
     });
-    //Плавная прокрутка. Якоря
+    //Плавная прокрутка якоря
     $('a[href^="#services"]').bind("click", function (e) {
         var anchor = $(this);
         $('html, body').stop().animate({
