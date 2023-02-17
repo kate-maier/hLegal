@@ -8,6 +8,7 @@
 @import "about_main";
 @import "services_main";
 @import "team_main";
+@import "public_main";
 @import "mixins";
 
 
@@ -301,23 +302,18 @@
     &__wrapper-cards {
       display: grid;
       grid-template-columns: 309px 309px;
-      grid-template-rows: 514px 388px;
     }
   }
 
   .card-public {
-    min-height: auto;
 
-    &__img {
+    &:last-child:nth-child(2n+1) {
+      grid-column-end: span 2;
 
-      &_combined {
+      img {
         height: auto;
         width: 100%;
       }
-    }
-
-    &:last-child {
-      grid-column-end: span 2;
     }
   }
 
@@ -451,6 +447,13 @@
         height: 100%;
         width: auto;
       }
+    }
+  }
+
+  // publications page 
+  .publications {
+    &_basic {
+      margin-top: 60px;
     }
   }
 
@@ -637,12 +640,10 @@
 
     &__wrapper-cards {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
     }
   }
 
   .card-public {
-    min-height: 556px;
     overflow: hidden;
 
 
@@ -653,8 +654,13 @@
       }
     }
 
-    &:last-child {
+    &:last-child:nth-child(2n+1) {
       grid-column: auto;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 
@@ -866,12 +872,18 @@
   }
 
   .card-public {
-    min-height: 430px;
 
     &__wrap-img {
       img {
         width: 100%;
         height: auto;
+      }
+    }
+
+    &:last-child:nth-child(2n+1) {
+      img {
+        height: auto;
+        width: 100%;
       }
     }
   }
@@ -1009,12 +1021,18 @@
   }
 
   .card-public {
-    min-height: 450px;
 
     &__wrap-img {
       img {
         width: 100%;
         height: auto;
+      }
+    }
+
+    &:last-child:nth-child(2n+1) {
+      img {
+        height: auto;
+        width: 100%;
       }
     }
   }
