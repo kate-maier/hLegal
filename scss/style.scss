@@ -193,6 +193,7 @@
   }
 
   .advantages {
+
     &__titles {
       min-height: 106px;
       padding-left: 60px;
@@ -203,14 +204,14 @@
       line-height: 1.2;
     }
 
-    &__wrap-content {
-      width: 648px;
-      min-height: 187px;
-      padding-top: 60px;
-    }
-
     &__content {
       width: auto;
+      min-height: 255px;
+    }
+
+    &__wrap-content {
+      width: 648px;
+      padding-top: 60px;
     }
 
     &__heading {
@@ -525,7 +526,6 @@
   .advantages {
     flex-direction: row;
     width: 904px;
-    height: 303px;
 
     &__titles {
       flex-direction: column;
@@ -533,9 +533,9 @@
       border-right: 4px solid $color-secondary;
       padding-right: 60px;
       width: 439px;
-      padding: 15px 60px 15px 0;
       gap: 30px;
       align-items: end;
+      justify-content: center;
 
       li {
         &:last-child {
@@ -559,6 +559,7 @@
     }
 
     &__content {
+      min-height: 303px;
       padding-left: 60px;
       display: flex;
       align-items: center;

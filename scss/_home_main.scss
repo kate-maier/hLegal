@@ -38,7 +38,7 @@
 }
 
 .slogan {
-    height: 600px;
+    min-height: 600px;
     width: 315px;
     position: relative;
     margin-bottom: 30px;
@@ -122,11 +122,11 @@
     &__content {
         display: flex;
         justify-content: center;
+        min-height: 356px;
     }
 
     &__wrap-content {
         width: 315px;
-        min-height: 348px;
         padding-top: 30px;
         border-top: 4px solid rgba(255, 255, 255, 0.3);
 
