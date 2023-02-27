@@ -1,0 +1,38 @@
+@import "mixins";
+
+.container_plug {
+
+    &::after,
+    &::before {
+        content: none;
+    }
+
+    border-radius: 0;
+    background-size: auto 100%,
+    auto;
+
+}
+
+.plug-heading {
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+}
+
+.container_dark.container_plug {
+    @include tabletSD {
+        background-size: auto 100%, auto;
+    }
+
+    @include tabletHD {
+        background-size: auto 100%, auto;
+    }
+
+    @include desktopHD {
+        background-size: auto 100%, auto;
+    }
+
+    @include desktopSD {
+        background-size: auto 100%, auto;
+    }
+}

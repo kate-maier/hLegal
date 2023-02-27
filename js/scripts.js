@@ -95,4 +95,3 @@ $(document).on('click', '.advantages__button', function () {
     var show = $(this).data('show');
     $(show).removeClass("advantages__wrap-content_hide").siblings().addClass("advantages__wrap-content_hide");
 });
-

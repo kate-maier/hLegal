@@ -53,19 +53,16 @@ button {
   text-transform: uppercase;
   @include link-color;
   position: relative;
-  display: block;
   padding-right: 14px;
   width: fit-content;
   transition: all 0.2s linear;
-
+  display: flex;
+  align-items: center;
 
   &__arrow {
-    position: absolute;
-    top: 50%;
     display: block;
     width: 12px;
     height: 12px;
-    transform: translateY(-50%);
     right: 2px;
     stroke: $regular-color;
     transition: all 0.2s linear;

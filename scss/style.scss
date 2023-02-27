@@ -9,6 +9,8 @@
 @import "services_main";
 @import "team_main";
 @import "public_main";
+@import "contact_main";
+@import "plug_page";
 @import "mixins";
 
 
@@ -458,6 +460,12 @@
     }
   }
 
+  // contact page
+  .contact {
+    padding: 60px 0;
+    width: 648px;
+  }
+
 }
 
 
@@ -779,6 +787,14 @@
     }
   }
 
+  // contact page
+  .contact {
+    width: 904px;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
 }
 
 
@@ -948,6 +964,11 @@
     }
   }
 
+  // contact page
+  .contact {
+    width: 1360px;
+  }
+
 }
 
 @include desktopSD {
@@ -1092,5 +1113,11 @@
       width: auto;
     }
   }
+
+  // contact page
+  .contact {
+    width: 1080px;
+  }
+
 
 }

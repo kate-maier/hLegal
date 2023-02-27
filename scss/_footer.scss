@@ -61,6 +61,10 @@
     &__phone {
         font-weight: 700;
         color: $dark-alt;
+
+        &:hover{
+            color: $accent-color;
+        }
     }
 
     &__email {
